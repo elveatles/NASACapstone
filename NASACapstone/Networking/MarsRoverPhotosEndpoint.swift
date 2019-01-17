@@ -48,7 +48,7 @@ struct MarsRoverPhotosEndpoints {
     }
     
     /// Endpoint to get photo data for rovers.
-    struct RoversEndpoint: Endpoint {
+    struct RoversPhotosEndpoint: Endpoint {
         let rover: Rover
         let sol: Int?
         let earthDate: Date?

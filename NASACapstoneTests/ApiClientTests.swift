@@ -47,7 +47,11 @@ class ApiClientTests: XCTestCase {
         
         // Create expected photo to compare actual response with.
         let imgSrc = URL(string: "http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01000/opgs/edr/fcam/FLB_486265257EDR_F0481570FHAZ00323M_.JPG")!
-        let expectedPhoto = MarsRoverPhoto(id: 102693, sol: sol, earthDate: Date(), imgSrc: imgSrc)
+        let launchDate = NasaApi.dateFormatter.date(from: "2011-11-26")!
+        let landingDate = NasaApi.dateFormatter.date(from: "2012-08-06")!
+        let maxDate = NasaApi.dateFormatter.date(from: "2019-01-15")!
+        let rover = MarsRover(id: 5, name: "Curiosity", launchDate: launchDate, landingDate: landingDate, status: "active", maxSol: 2291, maxDate: maxDate, totalPhotos: 345681, cameras: [])
+        let expectedPhoto = MarsRoverPhoto(id: 102693, sol: sol, earthDate: Date(), imgSrc: imgSrc, rover: rover)
         
         // Assert that the response is what was expected.
         switch optionalResponse! {

@@ -22,7 +22,7 @@ class MarsRoverPhotosEndpointsTests: XCTestCase {
     
     /// Test a rover endpoint using the sol initializer.
     func testRoverEndpointWithSol() {
-        let endpoint = MarsRoverPhotosEndpoints.RoversEndpoint(rover: .curiosity, sol: 1000, camera: .all, page: 1)
+        let endpoint = MarsRoverPhotosEndpoints.RoversPhotosEndpoint(rover: .curiosity, sol: 1000, camera: .all, page: 1)
         let request = endpoint.request
         let expectedUrl = URL(string: "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?api_key=\(ApiKey.nasa)&sol=1000&camera=all&page=1")
         XCTAssertEqual(request.url, expectedUrl)
@@ -35,7 +35,7 @@ class MarsRoverPhotosEndpointsTests: XCTestCase {
         dateComponents.month = 6
         dateComponents.day = 3
         let date = Calendar.current.date(from: dateComponents)!
-        let endpoint = MarsRoverPhotosEndpoints.RoversEndpoint(rover: .curiosity, earthDate: date, camera: .all, page: 1)
+        let endpoint = MarsRoverPhotosEndpoints.RoversPhotosEndpoint(rover: .curiosity, earthDate: date, camera: .all, page: 1)
         let request = endpoint.request
         let expectedUrl = URL(string: "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?api_key=\(ApiKey.nasa)&earth_date=2015-06-03&camera=all&page=1")
         XCTAssertEqual(request.url, expectedUrl)

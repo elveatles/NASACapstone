@@ -10,6 +10,10 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    /// URL session used for REST API clients.
+    static var urlSession = URLSession(configuration: .ephemeral)
+    /// The Mars rover photos client.
+    static var marsRoverPhotosClient = MarsRoverPhotosClient(apiKey: ApiKey.nasa, session: urlSession)
 
     var window: UIWindow?
 

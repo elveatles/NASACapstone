@@ -59,38 +59,38 @@ class ApiClient {
      - Parameter request: The request to make.
      - Parameter completionHandler: Called with the results when the request has finished.
     */
-    func fetch<T: Decodable>(with request: URLRequest, completionHandler: @escaping (ApiResponse<T>) -> Void) {
+    func fetch<T: Decodable>(with request: URLRequest, completion: @escaping (ApiResponse<T>) -> Void) {
         let task = session.dataTask(with: request) { (data, response, error) in
             // Check for error
             if let error = error {
-                completionHandler(.failure(error: error))
+                completion(.failure(error: error))
                 return
             }
             
             // Cast URLResponse to HTTPURLResponse
             guard let httpResponse = response as? HTTPURLResponse else {
-                completionHandler(.failure(error: ApiError.requestFailed))
+                completion(.failure(error: ApiError.requestFailed))
                 return
             }
             
             // Check response status code is success
             guard httpResponse.statusCode == 200 else {
-                completionHandler(.failure(error: ApiError.responseUnsuccessful))
+                completion(.failure(error: ApiError.responseUnsuccessful))
                 return
             }
             
             // Check data exists
             guard let data = data else {
-                completionHandler(.failure(error: ApiError.invalidData))
+                completion(.failure(error: ApiError.invalidData))
                 return
             }
             
             // Try to decode JSON response to model
             do {
                 let model = try self.decoder.decode(T.self, from: data)
-                completionHandler(.success(result: model))
+                completion(.success(result: model))
             } catch {
-                completionHandler(.failure(error: error))
+                completion(.failure(error: error))
             }
         }
         task.resume()
