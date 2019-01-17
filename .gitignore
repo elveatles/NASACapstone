@@ -68,4 +68,4 @@ fastlane/screenshots/**/*.png
 fastlane/test_output
 
 # NASA Capstone
-ApiKey.swift
+NASACapstone/Networking/ApiKey.swift
