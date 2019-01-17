@@ -37,8 +37,6 @@ class ApiClient {
     let session: URLSession
     /// The decoder for fetched results.
     let decoder: JSONDecoder
-    /// Formatter for the REST API dates.
-    let dateFormatter: DateFormatter
     
     /**
      Initialize the client.
@@ -49,13 +47,10 @@ class ApiClient {
     init(apiKey: String, session: URLSession? = nil) {
         self.apiKey = apiKey
         self.session = session ?? URLSession(configuration: .ephemeral)
-        // Date formatter
-        self.dateFormatter = DateFormatter()
-        self.dateFormatter.dateFormat = "yyyy-MM-dd"
         // Setup decoder
         self.decoder = JSONDecoder()
         self.decoder.keyDecodingStrategy = .convertFromSnakeCase
-        decoder.dateDecodingStrategy = .formatted(self.dateFormatter)
+        decoder.dateDecodingStrategy = .formatted(NasaApi.dateFormatter)
     }
     
     /**
