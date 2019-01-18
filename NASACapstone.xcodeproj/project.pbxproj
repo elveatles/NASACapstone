@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09A2578A21F1674400C8722D /* MarsRoverPhotosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2578921F1674400C8722D /* MarsRoverPhotosController.swift */; };
+		09A2578C21F1679D00C8722D /* MarsRoverPhotosFiltersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2578B21F1679D00C8722D /* MarsRoverPhotosFiltersController.swift */; };
 		09DEF69021EFDF4900A25956 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DEF68F21EFDF4900A25956 /* AppDelegate.swift */; };
 		09DEF69221EFDF4900A25956 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DEF69121EFDF4900A25956 /* ViewController.swift */; };
 		09DEF69521EFDF4900A25956 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09DEF69321EFDF4900A25956 /* Main.storyboard */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09A2578921F1674400C8722D /* MarsRoverPhotosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosController.swift; sourceTree = "<group>"; };
+		09A2578B21F1679D00C8722D /* MarsRoverPhotosFiltersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosFiltersController.swift; sourceTree = "<group>"; };
 		09DEF68C21EFDF4900A25956 /* NASACapstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NASACapstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09DEF68F21EFDF4900A25956 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09DEF69121EFDF4900A25956 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +84,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09A2578821F166B800C8722D /* MarsRoverPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				09A2578E21F1682500C8722D /* Networking */,
+				09DEF6BC21F02B4500A25956 /* Model */,
+				09A2578D21F167FA00C8722D /* Controllers */,
+			);
+			path = MarsRoverPhotos;
+			sourceTree = "<group>";
+		};
+		09A2578D21F167FA00C8722D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				09A2578921F1674400C8722D /* MarsRoverPhotosController.swift */,
+				09A2578B21F1679D00C8722D /* MarsRoverPhotosFiltersController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		09A2578E21F1682500C8722D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				09DEF6C721F105F100A25956 /* MarsRoverPhotosEndpoint.swift */,
+				09DEF6C321F0FF5000A25956 /* MarsRoverPhotosClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		09DEF68321EFDF4900A25956 = {
 			isa = PBXGroup;
 			children = (
@@ -101,7 +133,7 @@
 		09DEF68E21EFDF4900A25956 /* NASACapstone */ = {
 			isa = PBXGroup;
 			children = (
-				09DEF6BC21F02B4500A25956 /* Model */,
+				09A2578821F166B800C8722D /* MarsRoverPhotos */,
 				09DEF6AF21F0074400A25956 /* Networking */,
 				09DEF68F21EFDF4900A25956 /* AppDelegate.swift */,
 				09DEF69121EFDF4900A25956 /* ViewController.swift */,
@@ -133,9 +165,7 @@
 				09DEF6CD21F1154700A25956 /* ApiKey.swift */,
 				09DEF6CF21F118B500A25956 /* NasaApi.swift */,
 				09DEF6CB21F10F5500A25956 /* Endpoint.swift */,
-				09DEF6C721F105F100A25956 /* MarsRoverPhotosEndpoint.swift */,
 				09DEF6B621F00AC200A25956 /* ApiClient.swift */,
-				09DEF6C321F0FF5000A25956 /* MarsRoverPhotosClient.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -250,6 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09A2578C21F1679D00C8722D /* MarsRoverPhotosFiltersController.swift in Sources */,
+				09A2578A21F1674400C8722D /* MarsRoverPhotosController.swift in Sources */,
 				09DEF6CC21F10F5500A25956 /* Endpoint.swift in Sources */,
 				09DEF6C421F0FF5000A25956 /* MarsRoverPhotosClient.swift in Sources */,
 				09DEF6CE21F1154700A25956 /* ApiKey.swift in Sources */,
