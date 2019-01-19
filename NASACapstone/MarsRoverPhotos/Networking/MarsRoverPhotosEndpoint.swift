@@ -43,8 +43,6 @@ struct MarsRoverPhotosEndpoints {
         case pancam
         /// Miniature Thermal Emission Spectrometer (Mini-TES) (Opportunity, Spirit)
         case minites
-        /// All cameras
-        case all
     }
     
     /// Endpoint to get photo data for rovers.

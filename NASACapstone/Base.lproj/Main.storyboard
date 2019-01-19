@@ -43,7 +43,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yc3-6s-zKe">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="297.5"/>
                                                 <connections>
-                                                    <segue destination="GEC-9w-FhR" kind="show" id="X2f-eK-bHg"/>
+                                                    <segue destination="dRH-ek-F5q" kind="show" id="o70-60-JW0"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -118,54 +118,66 @@
             <point key="canvasLocation" x="847.20000000000005" y="133.00492610837438"/>
         </scene>
         <!--Mars Rover Photos-->
-        <scene sceneID="64q-ZG-lPW">
+        <scene sceneID="QAJ-rI-LJF">
             <objects>
-                <viewController id="GEC-9w-FhR" customClass="MarsRoverPhotosController" customModule="NASACapstone" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nVB-yo-rK0">
+                <collectionViewController id="dRH-ek-F5q" customClass="MarsRoverPhotosCollectionController" customModule="NASACapstone" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="mCf-pg-Mpi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Bws-pt-pw1">
-                                <rect key="frame" x="16" y="80" width="343" height="587"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nim-Rp-FZ8">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="LQs-RV-Tpq">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Bws-pt-pw1" firstAttribute="leading" secondItem="dbh-QX-sjH" secondAttribute="leading" constant="16" id="0W1-6R-N1l"/>
-                            <constraint firstItem="dbh-QX-sjH" firstAttribute="trailing" secondItem="Bws-pt-pw1" secondAttribute="trailing" constant="16" id="Y40-3P-n7E"/>
-                            <constraint firstItem="Bws-pt-pw1" firstAttribute="bottom" secondItem="dbh-QX-sjH" secondAttribute="bottom" id="mIQ-kX-ilF"/>
-                            <constraint firstItem="Bws-pt-pw1" firstAttribute="top" secondItem="dbh-QX-sjH" secondAttribute="top" constant="16" id="rKH-VE-VD7"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="dbh-QX-sjH"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Mars Rover Photos" id="2bk-8s-Qqx">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="filters" id="QDJ-8X-PQf">
+                        <color key="backgroundColor" white="0.18500943789999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jUl-HC-RYT">
+                            <size key="itemSize" width="100" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                        </collectionViewFlowLayout>
+                        <activityIndicatorView key="backgroundView" hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" id="vz8-Wj-9hh">
+                            <rect key="frame" x="0.0" y="-64" width="375" height="667"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </activityIndicatorView>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="00y-bZ-fLX" customClass="MarsRoverPhotoCell" customModule="NASACapstone" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sfg-Ml-2dJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Sfg-Ml-2dJ" secondAttribute="bottom" id="60P-Ml-G01"/>
+                                    <constraint firstAttribute="trailing" secondItem="Sfg-Ml-2dJ" secondAttribute="trailing" id="63D-sp-Rfm"/>
+                                    <constraint firstItem="Sfg-Ml-2dJ" firstAttribute="leading" secondItem="00y-bZ-fLX" secondAttribute="leading" id="qCW-2G-sdu"/>
+                                    <constraint firstItem="Sfg-Ml-2dJ" firstAttribute="top" secondItem="00y-bZ-fLX" secondAttribute="top" id="uAE-9o-Lj2"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="Sfg-Ml-2dJ" id="ndF-Z7-NQK"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="dRH-ek-F5q" id="0iC-MT-dYG"/>
+                            <outlet property="delegate" destination="dRH-ek-F5q" id="TBo-cz-UN3"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Mars Rover Photos" id="z9p-uG-qbD">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="filters" id="sME-Bh-PDp">
                             <connections>
-                                <segue destination="cjb-Gw-Zau" kind="show" id="kff-l1-w2e"/>
+                                <segue destination="cjb-Gw-Zau" kind="show" identifier="showMarsRoverPhotosFilters" id="cCh-dQ-aIX"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JfO-S2-dkd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    <connections>
+                        <outlet property="activityView" destination="vz8-Wj-9hh" id="rcN-3k-l6F"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ye-7S-Ze5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1776.8" y="-153.69458128078819"/>
+            <point key="canvasLocation" x="1776.8" y="-155.17241379310346"/>
         </scene>
         <!--Filters-->
         <scene sceneID="BDe-Iv-aiu">
@@ -186,7 +198,7 @@
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rover" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYj-dG-wSj">
                                 <rect key="frame" x="16" y="80" width="343" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -197,10 +209,13 @@
                                     <segment title="Earth Days"/>
                                 </segments>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="timeUnitsChanged:" destination="cjb-Gw-Zau" eventType="valueChanged" id="rsQ-cV-YZ8"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msd-g6-eqL">
                                 <rect key="frame" x="16" y="144.5" width="343" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -208,15 +223,30 @@
                                 <rect key="frame" x="16" y="209" width="343" height="30"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1000" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x6S-kZ-hEL">
-                                        <rect key="frame" x="0.0" y="0.0" width="241" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="208" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                        <connections>
+                                            <action selector="solTextFieldChanged:" destination="cjb-Gw-Zau" eventType="editingDidEnd" id="xtr-IM-yCE"/>
+                                        </connections>
+                                    </textField>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1000" maximumValue="100000" translatesAutoresizingMaskIntoConstraints="NO" id="CK5-6Z-Apu">
+                                        <rect key="frame" x="216" y="0.0" width="94" height="29"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="solStepperChanged:" destination="cjb-Gw-Zau" eventType="valueChanged" id="uBD-JV-ZCf"/>
+                                        </connections>
+                                    </stepper>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d4r-WF-HZv">
+                                        <rect key="frame" x="318" y="0.0" width="25" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="earthDateChanged:" destination="cjb-Gw-Zau" eventType="editingDidEnd" id="eO0-Zy-lGN"/>
+                                        </connections>
                                     </textField>
-                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="CK5-6Z-Apu">
-                                        <rect key="frame" x="249" y="0.0" width="94" height="29"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </stepper>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Cna-0E-IoZ"/>
@@ -224,73 +254,142 @@
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cameras" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hob-vH-o7l">
                                 <rect key="frame" x="16" y="263" width="343" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bea-n5-L0x">
                                 <rect key="frame" x="16" y="299.5" width="343" height="300"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roy-II-LDb">
+                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roy-II-LDb">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="All">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <state key="selected">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="cameraButtonTouched:" destination="cjb-Gw-Zau" eventType="touchUpInside" id="0gV-zf-XRa"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDr-ml-nG9">
                                         <rect key="frame" x="0.0" y="30" width="343" height="30"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <state key="normal" title="Front Hazard Avoidance Camera">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cameraButtonTouched:" destination="cjb-Gw-Zau" eventType="touchUpInside" id="9yf-H8-pjr"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bE3-cM-qhs">
                                         <rect key="frame" x="0.0" y="60" width="343" height="30"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Rear Hazard Avoidance Camera">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cameraButtonTouched:" destination="cjb-Gw-Zau" eventType="touchUpInside" id="JiT-eP-g4q"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6L-5I-ipF">
                                         <rect key="frame" x="0.0" y="90" width="343" height="30"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Mast Camera">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cameraButtonTouched:" destination="cjb-Gw-Zau" eventType="touchUpInside" id="m5Y-fE-sNk"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfL-Uf-roF">
                                         <rect key="frame" x="0.0" y="120" width="343" height="30"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Chemistry and Camera Complex">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cameraButtonTouched:" destination="cjb-Gw-Zau" eventType="touchUpInside" id="LRp-Ia-Bqp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znS-M0-YDY">
                                         <rect key="frame" x="0.0" y="150" width="343" height="30"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Mars Hand Lens Imager">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cameraButtonTouched:" destination="cjb-Gw-Zau" eventType="touchUpInside" id="q0P-px-Wan"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5SK-c2-8b2">
                                         <rect key="frame" x="0.0" y="180" width="343" height="30"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Mars Descent Imager">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cameraButtonTouched:" destination="cjb-Gw-Zau" eventType="touchUpInside" id="HNT-n0-Vvp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBX-XO-yoI">
                                         <rect key="frame" x="0.0" y="210" width="343" height="30"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Navigation Camera">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cameraButtonTouched:" destination="cjb-Gw-Zau" eventType="touchUpInside" id="NRt-QM-tpw"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tfl-Mj-sGR">
                                         <rect key="frame" x="0.0" y="240" width="343" height="30"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Panoramic Camera">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cameraButtonTouched:" destination="cjb-Gw-Zau" eventType="touchUpInside" id="Xfu-md-zjq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNh-JA-IcR">
                                         <rect key="frame" x="0.0" y="270" width="343" height="30"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Miniature Thermal Emission Spectrometer">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cameraButtonTouched:" destination="cjb-Gw-Zau" eventType="touchUpInside" id="WVw-fm-ba6"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -331,8 +430,29 @@
                         <viewLayoutGuide key="safeArea" id="RAy-bN-KD2"/>
                     </view>
                     <navigationItem key="navigationItem" title="Filters" id="Ir7-2X-pf7">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="5Ve-HR-x3o"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="5Ve-HR-x3o">
+                            <connections>
+                                <action selector="done:" destination="cjb-Gw-Zau" id="ABL-gQ-TRo"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="cameraButtonAll" destination="roy-II-LDb" id="bd9-EL-khn"/>
+                        <outlet property="cameraButtonChemcam" destination="vfL-Uf-roF" id="wSR-WE-Ewn"/>
+                        <outlet property="cameraButtonFhaz" destination="GDr-ml-nG9" id="iW2-eK-gfU"/>
+                        <outlet property="cameraButtonMahli" destination="znS-M0-YDY" id="Zt5-1o-LVj"/>
+                        <outlet property="cameraButtonMardi" destination="5SK-c2-8b2" id="g53-UP-Ih6"/>
+                        <outlet property="cameraButtonMast" destination="Z6L-5I-ipF" id="W1m-Jr-OZ7"/>
+                        <outlet property="cameraButtonMiniTes" destination="NNh-JA-IcR" id="hvV-rA-bIQ"/>
+                        <outlet property="cameraButtonNavcam" destination="WBX-XO-yoI" id="9eO-Sx-PHe"/>
+                        <outlet property="cameraButtonPancam" destination="Tfl-Mj-sGR" id="NJ0-pN-HzI"/>
+                        <outlet property="cameraButtonRhaz" destination="bE3-cM-qhs" id="wiX-51-zsH"/>
+                        <outlet property="earthDateTextField" destination="d4r-WF-HZv" id="JW3-aW-Gjk"/>
+                        <outlet property="roverControl" destination="aVu-0G-tgP" id="Hut-a8-9yY"/>
+                        <outlet property="solStepper" destination="CK5-6Z-Apu" id="yHa-ZK-GK0"/>
+                        <outlet property="solTextField" destination="x6S-kZ-hEL" id="kEA-8Y-VaX"/>
+                        <outlet property="timeControl" destination="6Ja-oI-Cnr" id="UCK-jF-dfc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IOP-OJ-u2B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

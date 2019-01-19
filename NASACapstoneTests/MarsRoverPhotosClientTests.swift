@@ -40,7 +40,7 @@ class MarsRoverPhotosClientTests: XCTestCase {
         // Make the fake request.
         // This works because the callback is NOT asynchronous for MockURLSession.
         var capturedResponse: ApiResponse<MarsRoverPhotoPage>?
-        marsRoversPhotosClient.roversPhotos(rover: .curiosity, sol: sol, camera: .all, page: 1) { (response) in
+        marsRoversPhotosClient.roversPhotos(rover: .curiosity, sol: sol, camera: nil, page: 1) { (response) in
             capturedResponse = response
         }
         
@@ -81,7 +81,7 @@ class MarsRoverPhotosClientTests: XCTestCase {
         // Make the fake request.
         // This works because the callback is NOT asynchronous for MockURLSession.
         var capturedResponse: ApiResponse<MarsRoverPhotoPage>?
-        marsRoversPhotosClient.roversPhotos(rover: .curiosity, earthDate: earthDate, camera: .all, page: 1) { (response) in
+        marsRoversPhotosClient.roversPhotos(rover: .curiosity, earthDate: earthDate, camera: nil, page: 1) { (response) in
             capturedResponse = response
         }
         

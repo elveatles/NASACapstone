@@ -46,6 +46,13 @@ struct MarsRoverPhoto: Codable {
     let rover: MarsRover
 }
 
+extension MarsRoverPhoto {
+    /// Get imgSrc as https instead of http.
+    var imgSrcHttps: URL {
+        let newUrl = imgSrc.absoluteString.replacingOccurrences(of: "http", with: "https")
+        return URL(string: newUrl)!
+    }
+}
 
 extension MarsRoverPhoto: Equatable {
     static func == (lhs: MarsRoverPhoto, rhs: MarsRoverPhoto) -> Bool {
