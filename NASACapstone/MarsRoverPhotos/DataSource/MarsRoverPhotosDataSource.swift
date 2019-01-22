@@ -24,9 +24,19 @@ class MarsRoverPhotosDataSource: NSObject, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! MarsRoverPhotoCell
         
-        let photo = photos[indexPath.row]
+        let photo = object(for: indexPath)
         cell.configure(photo: photo)
         
         return cell
+    }
+    
+    /**
+     Get a photo object for an index path.
+     
+     - Parameter indexPath: The index path of the photo.
+     - Returns: The photo at the index path.
+    */
+    func object(for indexPath: IndexPath) -> MarsRoverPhoto {
+        return photos[indexPath.row]
     }
 }

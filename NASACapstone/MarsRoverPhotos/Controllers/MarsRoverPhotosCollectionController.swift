@@ -59,6 +59,13 @@ class MarsRoverPhotosCollectionController: UICollectionViewController {
             let controller = segue.destination as! MarsRoverPhotosFiltersController
             controller.endpoint = photosEndpoint
             controller.endpointUpdated = endpointUpdated
+        } else if segue.identifier == "showMarsRoverPhotoEdit" {
+            guard let indexPath = collectionView.indexPathsForSelectedItems?.first else {
+                print("MarsRoverPhotosCollectionController.prepare: Error: No selected index path.")
+                return
+            }
+            let controller = segue.destination as! MarsRoverPhotosEditController
+            controller.photo = dataSource.object(for: indexPath)
         }
     }
     

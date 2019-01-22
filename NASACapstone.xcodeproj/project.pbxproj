@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		097EBE0521F66A1E0032C8BE /* MarsRoverPhotosEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EBE0421F66A1E0032C8BE /* MarsRoverPhotosEditController.swift */; };
+		097EBE0721F69B350032C8BE /* ColorPickerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EBE0621F69B350032C8BE /* ColorPickerDataSource.swift */; };
+		097EBE0921F6B07F0032C8BE /* UITextView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EBE0821F6B07F0032C8BE /* UITextView+Helpers.swift */; };
+		097EBE1121F6B82D0032C8BE /* Comparable+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EBE1021F6B82D0032C8BE /* Comparable+Helpers.swift */; };
+		097EBE1321F6B92E0032C8BE /* ComparableHelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EBE1221F6B92E0032C8BE /* ComparableHelpersTests.swift */; };
 		09A2578C21F1679D00C8722D /* MarsRoverPhotosFiltersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2578B21F1679D00C8722D /* MarsRoverPhotosFiltersController.swift */; };
 		09A2579221F194EA00C8722D /* MarsRoverPhotosCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2579121F194EA00C8722D /* MarsRoverPhotosCollectionController.swift */; };
 		09A2579721F1977400C8722D /* MarsRoverPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2579621F1977400C8722D /* MarsRoverPhotoCell.swift */; };
@@ -46,6 +51,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		097EBE0421F66A1E0032C8BE /* MarsRoverPhotosEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosEditController.swift; sourceTree = "<group>"; };
+		097EBE0621F69B350032C8BE /* ColorPickerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerDataSource.swift; sourceTree = "<group>"; };
+		097EBE0821F6B07F0032C8BE /* UITextView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Helpers.swift"; sourceTree = "<group>"; };
+		097EBE1021F6B82D0032C8BE /* Comparable+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+Helpers.swift"; sourceTree = "<group>"; };
+		097EBE1221F6B92E0032C8BE /* ComparableHelpersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableHelpersTests.swift; sourceTree = "<group>"; };
 		09A2578B21F1679D00C8722D /* MarsRoverPhotosFiltersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosFiltersController.swift; sourceTree = "<group>"; };
 		09A2579121F194EA00C8722D /* MarsRoverPhotosCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosCollectionController.swift; sourceTree = "<group>"; };
 		09A2579621F1977400C8722D /* MarsRoverPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotoCell.swift; sourceTree = "<group>"; };
@@ -114,6 +124,7 @@
 			children = (
 				09A2579121F194EA00C8722D /* MarsRoverPhotosCollectionController.swift */,
 				09A2578B21F1679D00C8722D /* MarsRoverPhotosFiltersController.swift */,
+				097EBE0421F66A1E0032C8BE /* MarsRoverPhotosEditController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -140,6 +151,8 @@
 			children = (
 				09A2579921F19EBC00C8722D /* UIViewController+Helpers.swift */,
 				09A257A721F2B3B400C8722D /* UITextField+Helpers.swift */,
+				097EBE0821F6B07F0032C8BE /* UITextView+Helpers.swift */,
+				097EBE1021F6B82D0032C8BE /* Comparable+Helpers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -156,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				09A257A221F2537D00C8722D /* MarsRoverPhotosDataSource.swift */,
+				097EBE0621F69B350032C8BE /* ColorPickerDataSource.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -198,6 +212,7 @@
 		09DEF6A321EFDF4C00A25956 /* NASACapstoneTests */ = {
 			isa = PBXGroup;
 			children = (
+				097EBE1221F6B92E0032C8BE /* ComparableHelpersTests.swift */,
 				09DEF6B821F01E1400A25956 /* MockURLSession.swift */,
 				09A2579F21F1AC6400C8722D /* MarsRoverPhotoTests.swift */,
 				09DEF6D321F1457E00A25956 /* MarsRoverPhotosClientTests.swift */,
@@ -359,12 +374,16 @@
 				09A2579721F1977400C8722D /* MarsRoverPhotoCell.swift in Sources */,
 				09A257A321F2537D00C8722D /* MarsRoverPhotosDataSource.swift in Sources */,
 				09DEF6C421F0FF5000A25956 /* MarsRoverPhotosClient.swift in Sources */,
+				097EBE1121F6B82D0032C8BE /* Comparable+Helpers.swift in Sources */,
 				09DEF6CE21F1154700A25956 /* ApiKey.swift in Sources */,
+				097EBE0521F66A1E0032C8BE /* MarsRoverPhotosEditController.swift in Sources */,
+				097EBE0721F69B350032C8BE /* ColorPickerDataSource.swift in Sources */,
 				09A2579221F194EA00C8722D /* MarsRoverPhotosCollectionController.swift in Sources */,
 				09DEF69221EFDF4900A25956 /* ViewController.swift in Sources */,
 				09A257A821F2B3B400C8722D /* UITextField+Helpers.swift in Sources */,
 				09DEF6B721F00AC200A25956 /* ApiClient.swift in Sources */,
 				09DEF6BE21F02B7800A25956 /* MarsRoverPhoto.swift in Sources */,
+				097EBE0921F6B07F0032C8BE /* UITextView+Helpers.swift in Sources */,
 				09DEF69021EFDF4900A25956 /* AppDelegate.swift in Sources */,
 				09DEF6C821F105F100A25956 /* MarsRoverPhotosEndpoint.swift in Sources */,
 				09DEF6D021F118B500A25956 /* NasaApi.swift in Sources */,
@@ -381,6 +400,7 @@
 				09DEF6B921F01E1400A25956 /* MockURLSession.swift in Sources */,
 				09DEF6A521EFDF4C00A25956 /* NASACapstoneTests.swift in Sources */,
 				09DEF6D421F1457E00A25956 /* MarsRoverPhotosClientTests.swift in Sources */,
+				097EBE1321F6B92E0032C8BE /* ComparableHelpersTests.swift in Sources */,
 				09DEF6D221F11A5C00A25956 /* MarsRoverPhotosEndpointsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -156,6 +156,7 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="imageView" destination="Sfg-Ml-2dJ" id="ndF-Z7-NQK"/>
+                                    <segue destination="Ffy-6a-L4D" kind="show" identifier="showMarsRoverPhotoEdit" id="5st-UY-woo"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -178,6 +179,129 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ye-7S-Ze5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1776.8" y="-155.17241379310346"/>
+        </scene>
+        <!--Edit Photo-->
+        <scene sceneID="9El-eq-GIm">
+            <objects>
+                <viewController id="Ffy-6a-L4D" customClass="MarsRoverPhotosEditController" customModule="NASACapstone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l2c-HN-675">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YEz-mn-1EX">
+                                <rect key="frame" x="0.0" y="64" width="375" height="553"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h3r-D8-ySp">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="553"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Your message!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yhu-8U-R9k">
+                                        <rect key="frame" x="8" y="8" width="359" height="537"/>
+                                        <gestureRecognizers/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" spellCheckingType="no"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="16E-LZ-MnS" appends="YES" id="GFq-XD-1cO"/>
+                                            <outletCollection property="gestureRecognizers" destination="Tl7-y2-lz4" appends="YES" id="ZPy-Ev-Ncs"/>
+                                            <outletCollection property="gestureRecognizers" destination="nXO-ja-xie" appends="YES" id="J6Z-Ct-DSv"/>
+                                        </connections>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="h3r-D8-ySp" firstAttribute="leading" secondItem="YEz-mn-1EX" secondAttribute="leading" id="D6X-Ba-4xz"/>
+                                    <constraint firstAttribute="bottom" secondItem="h3r-D8-ySp" secondAttribute="bottom" id="Gu7-U8-9wC"/>
+                                    <constraint firstAttribute="trailing" secondItem="yhu-8U-R9k" secondAttribute="trailing" constant="8" id="M1A-2o-jGk"/>
+                                    <constraint firstItem="yhu-8U-R9k" firstAttribute="top" secondItem="YEz-mn-1EX" secondAttribute="top" constant="8" id="PXE-Wt-5rR"/>
+                                    <constraint firstAttribute="trailing" secondItem="h3r-D8-ySp" secondAttribute="trailing" id="REp-ED-Xeh"/>
+                                    <constraint firstAttribute="bottom" secondItem="yhu-8U-R9k" secondAttribute="bottom" constant="8" id="UAo-8f-hMm"/>
+                                    <constraint firstItem="h3r-D8-ySp" firstAttribute="top" secondItem="YEz-mn-1EX" secondAttribute="top" id="eGm-gv-Gap"/>
+                                    <constraint firstItem="yhu-8U-R9k" firstAttribute="leading" secondItem="YEz-mn-1EX" secondAttribute="leading" constant="8" id="gp5-F1-b56"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gK3-k6-5e9">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Bfm-1q-WyX">
+                                        <rect key="frame" x="8" y="8" width="359" height="34"/>
+                                        <subviews>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Jaz-SI-9Ax">
+                                                <rect key="frame" x="0.0" y="0.0" width="359" height="34"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BeJ-Fh-DEK">
+                                                    <size key="itemSize" width="40" height="40"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="QeI-Ru-sdw">
+                                                        <rect key="frame" x="0.0" y="-3" width="40" height="40"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </view>
+                                                    </collectionViewCell>
+                                                </cells>
+                                            </collectionView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.18500943789999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Bfm-1q-WyX" secondAttribute="bottom" constant="8" id="Dr1-VK-oXP"/>
+                                    <constraint firstItem="Bfm-1q-WyX" firstAttribute="top" secondItem="gK3-k6-5e9" secondAttribute="top" constant="8" id="Fxu-2q-Ybt"/>
+                                    <constraint firstItem="Bfm-1q-WyX" firstAttribute="leading" secondItem="gK3-k6-5e9" secondAttribute="leading" constant="8" id="Nib-Fb-svL"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bfm-1q-WyX" secondAttribute="trailing" constant="8" id="ixx-HP-bOS"/>
+                                    <constraint firstAttribute="height" constant="50" id="naq-PN-zOn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gK3-k6-5e9" firstAttribute="trailing" secondItem="knD-JU-B1k" secondAttribute="trailing" id="23T-LR-rop"/>
+                            <constraint firstItem="gK3-k6-5e9" firstAttribute="top" secondItem="YEz-mn-1EX" secondAttribute="bottom" id="3PO-Vk-pxV"/>
+                            <constraint firstItem="YEz-mn-1EX" firstAttribute="top" secondItem="knD-JU-B1k" secondAttribute="top" id="AdC-Xs-xAa"/>
+                            <constraint firstItem="YEz-mn-1EX" firstAttribute="leading" secondItem="knD-JU-B1k" secondAttribute="leading" id="Ggr-wN-6Es"/>
+                            <constraint firstItem="YEz-mn-1EX" firstAttribute="trailing" secondItem="knD-JU-B1k" secondAttribute="trailing" id="KhC-am-bY7"/>
+                            <constraint firstItem="gK3-k6-5e9" firstAttribute="bottom" secondItem="knD-JU-B1k" secondAttribute="bottom" id="NdE-3e-Eb4"/>
+                            <constraint firstItem="gK3-k6-5e9" firstAttribute="leading" secondItem="knD-JU-B1k" secondAttribute="leading" id="ZlG-cd-hvy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="knD-JU-B1k"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit Photo" id="QSu-DU-Iol">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="mRf-so-O9s">
+                            <connections>
+                                <action selector="done:" destination="Ffy-6a-L4D" id="TuR-nQ-pX5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="colorPickerCollection" destination="Jaz-SI-9Ax" id="t1m-sn-zBD"/>
+                        <outlet property="imageView" destination="h3r-D8-ySp" id="3Na-88-6ea"/>
+                        <outlet property="postcardView" destination="YEz-mn-1EX" id="Gt4-so-mWb"/>
+                        <outlet property="textView" destination="yhu-8U-R9k" id="eAO-3n-bWV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nFk-91-5f2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="16E-LZ-MnS">
+                    <connections>
+                        <action selector="textSwipedRight:" destination="Ffy-6a-L4D" id="8cl-yQ-1MB"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="Tl7-y2-lz4">
+                    <connections>
+                        <action selector="textSwipedLeft:" destination="Ffy-6a-L4D" id="Vrs-M8-xcj"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <pinchGestureRecognizer id="nXO-ja-xie">
+                    <connections>
+                        <action selector="textPinched:" destination="Ffy-6a-L4D" id="Q2C-jl-qpC"/>
+                    </connections>
+                </pinchGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2624.8000000000002" y="-155.17241379310346"/>
         </scene>
         <!--Filters-->
         <scene sceneID="BDe-Iv-aiu">
@@ -456,7 +580,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IOP-OJ-u2B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2621.5999999999999" y="-155.17241379310346"/>
+            <point key="canvasLocation" x="2625" y="-841"/>
         </scene>
         <!--Rover Cameras-->
         <scene sceneID="JOw-Ki-bhZ">
@@ -909,7 +1033,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0kP-1x-DOY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3429.5999999999999" y="-155.17241379310346"/>
+            <point key="canvasLocation" x="3492" y="-842"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gJo-F1-bMp">
