@@ -87,6 +87,7 @@ class ApiClient {
             
             // Try to decode JSON response to model
             do {
+                //let json = try JSONSerialization.jsonObject(with: data, options: [])
                 let model = try self.decoder.decode(T.self, from: data)
                 completion(.success(result: model))
             } catch {

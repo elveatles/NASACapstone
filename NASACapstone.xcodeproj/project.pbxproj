@@ -12,6 +12,13 @@
 		097EBE0921F6B07F0032C8BE /* UITextView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EBE0821F6B07F0032C8BE /* UITextView+Helpers.swift */; };
 		097EBE1121F6B82D0032C8BE /* Comparable+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EBE1021F6B82D0032C8BE /* Comparable+Helpers.swift */; };
 		097EBE1321F6B92E0032C8BE /* ComparableHelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EBE1221F6B92E0032C8BE /* ComparableHelpersTests.swift */; };
+		097EBE1721F7AA590032C8BE /* EarthImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EBE1621F7AA590032C8BE /* EarthImage.swift */; };
+		097EBE1A21F7AB2D0032C8BE /* EarthImageryEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EBE1921F7AB2D0032C8BE /* EarthImageryEndpoint.swift */; };
+		097EBE1C21F7B6580032C8BE /* EarthImageryEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EBE1B21F7B6580032C8BE /* EarthImageryEndpointTests.swift */; };
+		097EBE1E21F7B8E50032C8BE /* EarthImageryClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EBE1D21F7B8E50032C8BE /* EarthImageryClient.swift */; };
+		097EBE2021F7BA890032C8BE /* EarthImageryClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EBE1F21F7BA890032C8BE /* EarthImageryClientTests.swift */; };
+		097EBE2221F7BBBF0032C8BE /* earth_imagery_stub.json in Resources */ = {isa = PBXBuildFile; fileRef = 097EBE2121F7BBBF0032C8BE /* earth_imagery_stub.json */; };
+		097EBE2421F7F2720032C8BE /* NasaApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EBE2321F7F2720032C8BE /* NasaApi.swift */; };
 		09A2578C21F1679D00C8722D /* MarsRoverPhotosFiltersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2578B21F1679D00C8722D /* MarsRoverPhotosFiltersController.swift */; };
 		09A2579221F194EA00C8722D /* MarsRoverPhotosCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2579121F194EA00C8722D /* MarsRoverPhotosCollectionController.swift */; };
 		09A2579721F1977400C8722D /* MarsRoverPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2579621F1977400C8722D /* MarsRoverPhotoCell.swift */; };
@@ -32,10 +39,9 @@
 		09DEF6BE21F02B7800A25956 /* MarsRoverPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DEF6BD21F02B7800A25956 /* MarsRoverPhoto.swift */; };
 		09DEF6C221F02DBB00A25956 /* mars_rover_photos_stub.json in Resources */ = {isa = PBXBuildFile; fileRef = 09DEF6C121F02DBB00A25956 /* mars_rover_photos_stub.json */; };
 		09DEF6C421F0FF5000A25956 /* MarsRoverPhotosClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DEF6C321F0FF5000A25956 /* MarsRoverPhotosClient.swift */; };
-		09DEF6C821F105F100A25956 /* MarsRoverPhotosEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DEF6C721F105F100A25956 /* MarsRoverPhotosEndpoint.swift */; };
+		09DEF6C821F105F100A25956 /* MarsRoverPhotosEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DEF6C721F105F100A25956 /* MarsRoverPhotosEndpoints.swift */; };
 		09DEF6CC21F10F5500A25956 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DEF6CB21F10F5500A25956 /* Endpoint.swift */; };
 		09DEF6CE21F1154700A25956 /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DEF6CD21F1154700A25956 /* ApiKey.swift */; };
-		09DEF6D021F118B500A25956 /* NasaApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DEF6CF21F118B500A25956 /* NasaApi.swift */; };
 		09DEF6D221F11A5C00A25956 /* MarsRoverPhotosEndpointsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DEF6D121F11A5C00A25956 /* MarsRoverPhotosEndpointsTests.swift */; };
 		09DEF6D421F1457E00A25956 /* MarsRoverPhotosClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DEF6D321F1457E00A25956 /* MarsRoverPhotosClientTests.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +62,13 @@
 		097EBE0821F6B07F0032C8BE /* UITextView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Helpers.swift"; sourceTree = "<group>"; };
 		097EBE1021F6B82D0032C8BE /* Comparable+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+Helpers.swift"; sourceTree = "<group>"; };
 		097EBE1221F6B92E0032C8BE /* ComparableHelpersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableHelpersTests.swift; sourceTree = "<group>"; };
+		097EBE1621F7AA590032C8BE /* EarthImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthImage.swift; sourceTree = "<group>"; };
+		097EBE1921F7AB2D0032C8BE /* EarthImageryEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthImageryEndpoint.swift; sourceTree = "<group>"; };
+		097EBE1B21F7B6580032C8BE /* EarthImageryEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthImageryEndpointTests.swift; sourceTree = "<group>"; };
+		097EBE1D21F7B8E50032C8BE /* EarthImageryClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthImageryClient.swift; sourceTree = "<group>"; };
+		097EBE1F21F7BA890032C8BE /* EarthImageryClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthImageryClientTests.swift; sourceTree = "<group>"; };
+		097EBE2121F7BBBF0032C8BE /* earth_imagery_stub.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = earth_imagery_stub.json; sourceTree = "<group>"; };
+		097EBE2321F7F2720032C8BE /* NasaApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NasaApi.swift; sourceTree = "<group>"; };
 		09A2578B21F1679D00C8722D /* MarsRoverPhotosFiltersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosFiltersController.swift; sourceTree = "<group>"; };
 		09A2579121F194EA00C8722D /* MarsRoverPhotosCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosCollectionController.swift; sourceTree = "<group>"; };
 		09A2579621F1977400C8722D /* MarsRoverPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotoCell.swift; sourceTree = "<group>"; };
@@ -80,10 +93,9 @@
 		09DEF6BD21F02B7800A25956 /* MarsRoverPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhoto.swift; sourceTree = "<group>"; };
 		09DEF6C121F02DBB00A25956 /* mars_rover_photos_stub.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mars_rover_photos_stub.json; sourceTree = "<group>"; };
 		09DEF6C321F0FF5000A25956 /* MarsRoverPhotosClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosClient.swift; sourceTree = "<group>"; };
-		09DEF6C721F105F100A25956 /* MarsRoverPhotosEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosEndpoint.swift; sourceTree = "<group>"; };
+		09DEF6C721F105F100A25956 /* MarsRoverPhotosEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosEndpoints.swift; sourceTree = "<group>"; };
 		09DEF6CB21F10F5500A25956 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		09DEF6CD21F1154700A25956 /* ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
-		09DEF6CF21F118B500A25956 /* NasaApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaApi.swift; sourceTree = "<group>"; };
 		09DEF6D121F11A5C00A25956 /* MarsRoverPhotosEndpointsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosEndpointsTests.swift; sourceTree = "<group>"; };
 		09DEF6D321F1457E00A25956 /* MarsRoverPhotosClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosClientTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +119,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		097EBE1421F7A9E60032C8BE /* EarthImagery */ = {
+			isa = PBXGroup;
+			children = (
+				097EBE1821F7AB000032C8BE /* Networking */,
+				097EBE1521F7AA270032C8BE /* Model */,
+			);
+			path = EarthImagery;
+			sourceTree = "<group>";
+		};
+		097EBE1521F7AA270032C8BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				097EBE1621F7AA590032C8BE /* EarthImage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		097EBE1821F7AB000032C8BE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				097EBE1921F7AB2D0032C8BE /* EarthImageryEndpoint.swift */,
+				097EBE1D21F7B8E50032C8BE /* EarthImageryClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		09A2578821F166B800C8722D /* MarsRoverPhotos */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +170,7 @@
 		09A2578E21F1682500C8722D /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				09DEF6C721F105F100A25956 /* MarsRoverPhotosEndpoint.swift */,
+				09DEF6C721F105F100A25956 /* MarsRoverPhotosEndpoints.swift */,
 				09DEF6C321F0FF5000A25956 /* MarsRoverPhotosClient.swift */,
 			);
 			path = Networking;
@@ -199,6 +237,7 @@
 				09A2579821F19E8C00C8722D /* Extensions */,
 				09DEF6AF21F0074400A25956 /* Networking */,
 				09A2578821F166B800C8722D /* MarsRoverPhotos */,
+				097EBE1421F7A9E60032C8BE /* EarthImagery */,
 				09DEF68F21EFDF4900A25956 /* AppDelegate.swift */,
 				09DEF69121EFDF4900A25956 /* ViewController.swift */,
 				09DEF69321EFDF4900A25956 /* Main.storyboard */,
@@ -213,14 +252,17 @@
 			isa = PBXGroup;
 			children = (
 				097EBE1221F6B92E0032C8BE /* ComparableHelpersTests.swift */,
-				09DEF6B821F01E1400A25956 /* MockURLSession.swift */,
 				09A2579F21F1AC6400C8722D /* MarsRoverPhotoTests.swift */,
 				09DEF6D321F1457E00A25956 /* MarsRoverPhotosClientTests.swift */,
 				09DEF6D121F11A5C00A25956 /* MarsRoverPhotosEndpointsTests.swift */,
+				097EBE1B21F7B6580032C8BE /* EarthImageryEndpointTests.swift */,
+				097EBE1F21F7BA890032C8BE /* EarthImageryClientTests.swift */,
 				09DEF6BA21F02A9700A25956 /* ApiClientTests.swift */,
 				09DEF6A421EFDF4C00A25956 /* NASACapstoneTests.swift */,
+				09DEF6B821F01E1400A25956 /* MockURLSession.swift */,
 				09DEF6A621EFDF4C00A25956 /* Info.plist */,
 				09DEF6C121F02DBB00A25956 /* mars_rover_photos_stub.json */,
+				097EBE2121F7BBBF0032C8BE /* earth_imagery_stub.json */,
 			);
 			path = NASACapstoneTests;
 			sourceTree = "<group>";
@@ -228,8 +270,8 @@
 		09DEF6AF21F0074400A25956 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				097EBE2321F7F2720032C8BE /* NasaApi.swift */,
 				09DEF6CD21F1154700A25956 /* ApiKey.swift */,
-				09DEF6CF21F118B500A25956 /* NasaApi.swift */,
 				09DEF6CB21F10F5500A25956 /* Endpoint.swift */,
 				09DEF6B621F00AC200A25956 /* ApiClient.swift */,
 			);
@@ -337,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09DEF6C221F02DBB00A25956 /* mars_rover_photos_stub.json in Resources */,
+				097EBE2221F7BBBF0032C8BE /* earth_imagery_stub.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,15 +412,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				097EBE1E21F7B8E50032C8BE /* EarthImageryClient.swift in Sources */,
 				09A2578C21F1679D00C8722D /* MarsRoverPhotosFiltersController.swift in Sources */,
 				09DEF6CC21F10F5500A25956 /* Endpoint.swift in Sources */,
 				09A2579721F1977400C8722D /* MarsRoverPhotoCell.swift in Sources */,
 				09A257A321F2537D00C8722D /* MarsRoverPhotosDataSource.swift in Sources */,
 				09DEF6C421F0FF5000A25956 /* MarsRoverPhotosClient.swift in Sources */,
 				097EBE1121F6B82D0032C8BE /* Comparable+Helpers.swift in Sources */,
+				097EBE1721F7AA590032C8BE /* EarthImage.swift in Sources */,
 				09DEF6CE21F1154700A25956 /* ApiKey.swift in Sources */,
 				097EBE0521F66A1E0032C8BE /* MarsRoverPhotosEditController.swift in Sources */,
 				097EBE0721F69B350032C8BE /* ColorPickerDataSource.swift in Sources */,
+				097EBE2421F7F2720032C8BE /* NasaApi.swift in Sources */,
 				09A2579221F194EA00C8722D /* MarsRoverPhotosCollectionController.swift in Sources */,
 				09DEF69221EFDF4900A25956 /* ViewController.swift in Sources */,
 				09A257A821F2B3B400C8722D /* UITextField+Helpers.swift in Sources */,
@@ -385,8 +431,8 @@
 				09DEF6BE21F02B7800A25956 /* MarsRoverPhoto.swift in Sources */,
 				097EBE0921F6B07F0032C8BE /* UITextView+Helpers.swift in Sources */,
 				09DEF69021EFDF4900A25956 /* AppDelegate.swift in Sources */,
-				09DEF6C821F105F100A25956 /* MarsRoverPhotosEndpoint.swift in Sources */,
-				09DEF6D021F118B500A25956 /* NasaApi.swift in Sources */,
+				09DEF6C821F105F100A25956 /* MarsRoverPhotosEndpoints.swift in Sources */,
+				097EBE1A21F7AB2D0032C8BE /* EarthImageryEndpoint.swift in Sources */,
 				09A2579A21F19EBC00C8722D /* UIViewController+Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,6 +441,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				097EBE1C21F7B6580032C8BE /* EarthImageryEndpointTests.swift in Sources */,
+				097EBE2021F7BA890032C8BE /* EarthImageryClientTests.swift in Sources */,
 				09A257A021F1AC6400C8722D /* MarsRoverPhotoTests.swift in Sources */,
 				09DEF6BB21F02A9700A25956 /* ApiClientTests.swift in Sources */,
 				09DEF6B921F01E1400A25956 /* MockURLSession.swift in Sources */,

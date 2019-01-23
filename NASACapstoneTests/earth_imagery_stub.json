@@ -1,0 +1,11 @@
+{
+    "cloud_score": 0.17976662275948826,
+    "date": "2014-02-04T03:30:01",
+    "id": "LC8_L1T_TOA/LC81270592014035LGN00",
+    "resource": {
+        "dataset": "LC8_L1T_TOA",
+        "planet": "earth"
+    },
+    "service_version": "v1",
+    "url": "https://earthengine.googleapis.com/api/thumb?thumbid=ceef02619481b11dc80e00e8148902d5&token=b11596bd2fb5b81e7fff73f869366a81"
+}
