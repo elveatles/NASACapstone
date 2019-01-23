@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import CoreLocation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    static let locationManager = CLLocationManager()
     /// URL session used for REST API clients.
     static var urlSession = URLSession(configuration: .ephemeral)
     /// The Mars rover photos client.
