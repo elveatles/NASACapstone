@@ -17,10 +17,18 @@ class MarsRoverPhotosCollectionController: UICollectionViewController {
     /// The number of columns for the layout.
     private let columns = 3
     /// The endpoint that represents the filters the user chose.
-    private var photosEndpoint = MarsRoverPhotosEndpoints.RoversPhotosEndpoint(rover: .curiosity, sol: 1000, camera: nil, page: 1)
+    private var photosEndpoint: MarsRoverPhotosEndpoints.RoversPhotosEndpoint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Restore user filter settings. If there are no settings, use default values.
+        if let endpoint = MarsRoverPhotosEndpoints.RoversPhotosEndpoint.restore() {
+            photosEndpoint = endpoint
+        } else {
+            photosEndpoint = MarsRoverPhotosEndpoints.RoversPhotosEndpoint(
+                rover: .curiosity, sol: 1000, camera: nil, page: 1)
+        }
         
         collectionView.dataSource = dataSource
         

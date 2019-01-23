@@ -19,6 +19,7 @@
 		097EBE2021F7BA890032C8BE /* EarthImageryClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EBE1F21F7BA890032C8BE /* EarthImageryClientTests.swift */; };
 		097EBE2221F7BBBF0032C8BE /* earth_imagery_stub.json in Resources */ = {isa = PBXBuildFile; fileRef = 097EBE2121F7BBBF0032C8BE /* earth_imagery_stub.json */; };
 		097EBE2421F7F2720032C8BE /* NasaApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EBE2321F7F2720032C8BE /* NasaApi.swift */; };
+		097EBE2921F837490032C8BE /* MockUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EBE2821F837490032C8BE /* MockUserDefaults.swift */; };
 		09A2578C21F1679D00C8722D /* MarsRoverPhotosFiltersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2578B21F1679D00C8722D /* MarsRoverPhotosFiltersController.swift */; };
 		09A2579221F194EA00C8722D /* MarsRoverPhotosCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2579121F194EA00C8722D /* MarsRoverPhotosCollectionController.swift */; };
 		09A2579721F1977400C8722D /* MarsRoverPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2579621F1977400C8722D /* MarsRoverPhotoCell.swift */; };
@@ -69,6 +70,7 @@
 		097EBE1F21F7BA890032C8BE /* EarthImageryClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthImageryClientTests.swift; sourceTree = "<group>"; };
 		097EBE2121F7BBBF0032C8BE /* earth_imagery_stub.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = earth_imagery_stub.json; sourceTree = "<group>"; };
 		097EBE2321F7F2720032C8BE /* NasaApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NasaApi.swift; sourceTree = "<group>"; };
+		097EBE2821F837490032C8BE /* MockUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserDefaults.swift; sourceTree = "<group>"; };
 		09A2578B21F1679D00C8722D /* MarsRoverPhotosFiltersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosFiltersController.swift; sourceTree = "<group>"; };
 		09A2579121F194EA00C8722D /* MarsRoverPhotosCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosCollectionController.swift; sourceTree = "<group>"; };
 		09A2579621F1977400C8722D /* MarsRoverPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotoCell.swift; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 				09DEF6BA21F02A9700A25956 /* ApiClientTests.swift */,
 				09DEF6A421EFDF4C00A25956 /* NASACapstoneTests.swift */,
 				09DEF6B821F01E1400A25956 /* MockURLSession.swift */,
+				097EBE2821F837490032C8BE /* MockUserDefaults.swift */,
 				09DEF6A621EFDF4C00A25956 /* Info.plist */,
 				09DEF6C121F02DBB00A25956 /* mars_rover_photos_stub.json */,
 				097EBE2121F7BBBF0032C8BE /* earth_imagery_stub.json */,
@@ -447,6 +450,7 @@
 				09DEF6BB21F02A9700A25956 /* ApiClientTests.swift in Sources */,
 				09DEF6B921F01E1400A25956 /* MockURLSession.swift in Sources */,
 				09DEF6A521EFDF4C00A25956 /* NASACapstoneTests.swift in Sources */,
+				097EBE2921F837490032C8BE /* MockUserDefaults.swift in Sources */,
 				09DEF6D421F1457E00A25956 /* MarsRoverPhotosClientTests.swift in Sources */,
 				097EBE1321F6B92E0032C8BE /* ComparableHelpersTests.swift in Sources */,
 				09DEF6D221F11A5C00A25956 /* MarsRoverPhotosEndpointsTests.swift in Sources */,

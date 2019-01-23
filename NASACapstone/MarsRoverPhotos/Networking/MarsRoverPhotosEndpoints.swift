@@ -11,11 +11,6 @@ import Foundation
 
 /// Builds endpoint URLs for the Mars Rover Photos REST API.
 struct MarsRoverPhotosEndpoints {
-    /// The base of the endpoint URLs.
-    static let base = "https://api.nasa.gov"
-    /// The root path of the endpoint URLs.
-    static let rootPath = "/mars-photos/api/v1/rovers"
-    
     /// The rovers that have taken pictures on Mars.
     enum Rover: String {
         case curiosity
@@ -45,8 +40,69 @@ struct MarsRoverPhotosEndpoints {
         case minites
     }
     
+    /// String used to namespace/group Mars rover photos settings.
+    static let userDefaultsNamespace = "MarsRoverPhotos"
+    /// The base of the endpoint URLs.
+    static let base = "https://api.nasa.gov"
+    /// The root path of the endpoint URLs.
+    static let rootPath = "/mars-photos/api/v1/rovers"
+    
     /// Endpoint to get photo data for rovers.
     struct RoversPhotosEndpoint: Endpoint {
+        /**
+         Set the user defaults with an endpoint.
+         
+         Used for saving filter settings a user has made.
+         
+         - Parameter endpoint: The endpoint to save.
+         - Parameter userDefaults: The user defaults to set.
+        */
+        static func setUserDefaults(with endpoint: RoversPhotosEndpoint, userDefaults: UserDefaults = .standard) {
+            let namespace = MarsRoverPhotosEndpoints.userDefaultsNamespace
+            userDefaults.set(endpoint.rover.rawValue, forKey: "\(namespace).rover")
+            userDefaults.set(endpoint.sol, forKey: "\(namespace).sol")
+            userDefaults.set(endpoint.earthDate, forKey: "\(namespace).earthDate")
+            userDefaults.set(endpoint.camera?.rawValue, forKey: "\(namespace).camera")
+        }
+        
+        /**
+         Restore an endpoint from user defaults.
+         
+         Used to restore filter settings a user has made.
+         
+         - Parameter userDefaults: The user defaults to restore from.
+         - Returns: The endpoint from the user defaults. nil if there are no user defaults for this endpoint or something went wrong restoring.
+        */
+        static func restore(from userDefaults: UserDefaults = .standard) -> RoversPhotosEndpoint? {
+            let namespace = MarsRoverPhotosEndpoints.userDefaultsNamespace
+            
+            guard let roverString = userDefaults.string(forKey: "\(namespace).rover") else { return nil }
+            guard let roverValue = Rover(rawValue: roverString) else { return nil }
+            
+            let solValue = userDefaults.integer(forKey: "\(namespace).sol")
+            let earthDateValue = userDefaults.object(forKey: "\(namespace).earthDate") as? Date
+            
+            var cameraValue: Camera? = nil
+            if let cameraString = userDefaults.string(forKey: "\(namespace).camera") {
+                cameraValue = Camera(rawValue: cameraString)
+            }
+            
+            // Choose initializer based on weather sol or earthDate was saved.
+            if let earthDateValue = earthDateValue {
+                return RoversPhotosEndpoint(
+                    rover: roverValue,
+                    earthDate: earthDateValue,
+                    camera: cameraValue,
+                    page: 1)
+            } else {
+                return RoversPhotosEndpoint(
+                    rover: roverValue,
+                    sol: solValue,
+                    camera: cameraValue,
+                    page: 1)
+            }
+        }
+        
         let rover: Rover
         let sol: Int?
         let earthDate: Date?

@@ -136,6 +136,7 @@ class MarsRoverPhotosFiltersController: UIViewController {
             let solText = solTextField.text ?? "0"
             let sol = Int(solText)!
             let newEndpoint = MarsRoverPhotosEndpoints.RoversPhotosEndpoint(rover: rover, sol: sol, camera: camera, page: 1)
+            MarsRoverPhotosEndpoints.RoversPhotosEndpoint.setUserDefaults(with: newEndpoint)
             endpointUpdated?(newEndpoint)
         } else {
             let earthDateText = earthDateTextField.text ?? ""
@@ -144,6 +145,7 @@ class MarsRoverPhotosFiltersController: UIViewController {
                 return
             }
             let newEndpoint = MarsRoverPhotosEndpoints.RoversPhotosEndpoint(rover: rover, earthDate: earthDate, camera: camera, page: 1)
+            MarsRoverPhotosEndpoints.RoversPhotosEndpoint.setUserDefaults(with: newEndpoint)
             endpointUpdated?(newEndpoint)
         }
         navigationController?.popViewController(animated: true)
