@@ -1061,7 +1061,7 @@
                         <rightBarButtonItems>
                             <barButtonItem title="Next" id="y5m-lw-OSC">
                                 <connections>
-                                    <segue destination="cGW-l8-ttb" kind="show" id="Qfe-WL-Chd"/>
+                                    <segue destination="cGW-l8-ttb" kind="show" identifier="showEarthImagery" id="Qfe-WL-Chd"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem title="Item" image="nav_icon" id="hXU-Sz-of5">
@@ -1123,15 +1123,15 @@
             </objects>
             <point key="canvasLocation" x="1777" y="1207"/>
         </scene>
-        <!--View Controller-->
+        <!--Earth Image-->
         <scene sceneID="DW9-MU-4Ky">
             <objects>
-                <viewController id="cGW-l8-ttb" sceneMemberID="viewController">
+                <viewController id="cGW-l8-ttb" customClass="EarthImageryController" customModule="NASACapstone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bnL-Va-Uk7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZLp-3T-777">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZLp-3T-777">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                         </subviews>
@@ -1144,6 +1144,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Vif-cb-SHU"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Earth Image" id="1eP-Xm-zd0"/>
+                    <connections>
+                        <outlet property="imageView" destination="ZLp-3T-777" id="1WX-Sc-Eiz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AVw-9h-QiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

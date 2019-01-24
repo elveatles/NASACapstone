@@ -46,6 +46,13 @@ class EarthImagerySearchController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "showEarthImagery" {
+            let controller = segue.destination as! EarthImageryController
+            let region = mapView.region
+            let dim = min(region.span.latitudeDelta, region.span.longitudeDelta)
+            let endpoint = EarthImageryEndpoint(lat: region.center.latitude, lon: region.center.longitude, dim: dim)
+            controller.endpoint = endpoint
+        }
     }
 
     /// Show the user's current location on the map.

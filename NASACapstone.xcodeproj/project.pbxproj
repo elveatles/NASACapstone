@@ -32,6 +32,7 @@
 		09D4AE1321F908C800000261 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D4AE1221F908C800000261 /* SearchResultsController.swift */; };
 		09D4AE1521F9149D00000261 /* MKMapView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D4AE1421F9149D00000261 /* MKMapView+Helpers.swift */; };
 		09D4AE1721F9195700000261 /* CLPlacemark+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D4AE1621F9195700000261 /* CLPlacemark+Helpers.swift */; };
+		09D4AE1921F9340700000261 /* EarthImageryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D4AE1821F9340700000261 /* EarthImageryController.swift */; };
 		09DEF69021EFDF4900A25956 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DEF68F21EFDF4900A25956 /* AppDelegate.swift */; };
 		09DEF69221EFDF4900A25956 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DEF69121EFDF4900A25956 /* ViewController.swift */; };
 		09DEF69521EFDF4900A25956 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09DEF69321EFDF4900A25956 /* Main.storyboard */; };
@@ -87,6 +88,7 @@
 		09D4AE1221F908C800000261 /* SearchResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
 		09D4AE1421F9149D00000261 /* MKMapView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Helpers.swift"; sourceTree = "<group>"; };
 		09D4AE1621F9195700000261 /* CLPlacemark+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLPlacemark+Helpers.swift"; sourceTree = "<group>"; };
+		09D4AE1821F9340700000261 /* EarthImageryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthImageryController.swift; sourceTree = "<group>"; };
 		09DEF68C21EFDF4900A25956 /* NASACapstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NASACapstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09DEF68F21EFDF4900A25956 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09DEF69121EFDF4900A25956 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 			children = (
 				09D4AE1021F9049700000261 /* EarthImagerySearchController.swift */,
 				09D4AE1221F908C800000261 /* SearchResultsController.swift */,
+				09D4AE1821F9340700000261 /* EarthImageryController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				097EBE1E21F7B8E50032C8BE /* EarthImageryClient.swift in Sources */,
+				09D4AE1921F9340700000261 /* EarthImageryController.swift in Sources */,
 				09A2578C21F1679D00C8722D /* MarsRoverPhotosFiltersController.swift in Sources */,
 				09DEF6CC21F10F5500A25956 /* Endpoint.swift in Sources */,
 				09A2579721F1977400C8722D /* MarsRoverPhotoCell.swift in Sources */,

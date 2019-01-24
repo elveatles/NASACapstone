@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     static var urlSession = URLSession(configuration: .ephemeral)
     /// The Mars rover photos client.
     static var marsRoverPhotosClient = MarsRoverPhotosClient(apiKey: ApiKey.nasa, session: urlSession)
+    /// The Earth Imagery client.
+    static var earthImageryClient = EarthImageryClient(apiKey: ApiKey.nasa, session: urlSession)
 
     var window: UIWindow?
 

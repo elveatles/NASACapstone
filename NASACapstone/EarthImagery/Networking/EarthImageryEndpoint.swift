@@ -18,7 +18,7 @@ struct EarthImageryEndpoint: Endpoint {
     
     let base = "https://api.nasa.gov"
     let rootPath = ""
-    let path = "/planetary/earth/imagery"
+    let path = "/planetary/earth/imagery/"
     
     var queryItems: [URLQueryItem] {
         // api_key
@@ -43,5 +43,13 @@ struct EarthImageryEndpoint: Endpoint {
         }
         
         return result
+    }
+    
+    init(lat: Double, lon: Double, dim: Double? = nil, date: Date? = nil, cloudScore: Bool? = nil) {
+        self.lat = lat
+        self.lon = lon
+        self.dim = dim
+        self.date = date
+        self.cloudScore = cloudScore
     }
 }
