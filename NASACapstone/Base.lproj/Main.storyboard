@@ -23,10 +23,10 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xmC-RM-qx3">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="297.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="195.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rover" translatesAutoresizingMaskIntoConstraints="NO" id="Edc-CM-Hv4">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="297.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="195.5"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MARS ROVER" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duw-il-MIT">
                                                 <rect key="frame" x="214.5" y="8" width="152.5" height="30"/>
@@ -41,7 +41,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yc3-6s-zKe">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="297.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="195.5"/>
                                                 <connections>
                                                     <segue destination="dRH-ek-F5q" kind="show" id="o70-60-JW0"/>
                                                 </connections>
@@ -66,10 +66,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mSD-7X-cNs">
-                                        <rect key="frame" x="0.0" y="305.5" width="375" height="297.5"/>
+                                        <rect key="frame" x="0.0" y="203.5" width="375" height="196"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iss" translatesAutoresizingMaskIntoConstraints="NO" id="zYU-oD-lgw">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="297.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="196"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EYE IN THE SKY" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csS-hd-EUb">
                                                 <rect key="frame" x="189" y="8" width="178" height="30"/>
@@ -78,7 +78,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lhl-Qb-wLQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="297.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="196"/>
                                                 <connections>
                                                     <segue destination="RBT-qt-UWW" kind="show" id="EZw-8Z-bms"/>
                                                 </connections>
@@ -99,6 +99,50 @@
                                             <constraint firstAttribute="trailing" secondItem="zYU-oD-lgw" secondAttribute="trailing" id="w5O-BR-qzC"/>
                                         </constraints>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JgS-uK-ZwY">
+                                        <rect key="frame" x="0.0" y="407.5" width="375" height="195.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apod" translatesAutoresizingMaskIntoConstraints="NO" id="4Fz-CE-Hp8">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="195.5"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APOD" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sD2-GA-cvh">
+                                                <rect key="frame" x="300" y="8" width="67" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(ASTRONOMY PICTURE OF THE DAY)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRF-Wy-Q6y">
+                                                <rect key="frame" x="122.5" y="170.5" width="244.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xV3-XE-HQ0">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="195.5"/>
+                                                <connections>
+                                                    <segue destination="wUh-np-9Qe" kind="show" id="1aA-Tp-Lig"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="4Fz-CE-Hp8" secondAttribute="trailing" id="24l-IK-n4w"/>
+                                            <constraint firstItem="xV3-XE-HQ0" firstAttribute="leading" secondItem="JgS-uK-ZwY" secondAttribute="leading" id="62D-9s-edm"/>
+                                            <constraint firstItem="4Fz-CE-Hp8" firstAttribute="top" secondItem="JgS-uK-ZwY" secondAttribute="top" id="DJB-OG-bwn"/>
+                                            <constraint firstAttribute="trailing" secondItem="PRF-Wy-Q6y" secondAttribute="trailing" constant="8" id="Lyg-BW-ZIK"/>
+                                            <constraint firstItem="xV3-XE-HQ0" firstAttribute="top" secondItem="JgS-uK-ZwY" secondAttribute="top" id="MyG-ta-YH7"/>
+                                            <constraint firstItem="sD2-GA-cvh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="JgS-uK-ZwY" secondAttribute="leading" constant="20" symbolic="YES" id="Npv-Cr-zUB"/>
+                                            <constraint firstAttribute="bottom" secondItem="4Fz-CE-Hp8" secondAttribute="bottom" id="PrM-yJ-zzf"/>
+                                            <constraint firstItem="4Fz-CE-Hp8" firstAttribute="leading" secondItem="JgS-uK-ZwY" secondAttribute="leading" id="R44-mh-fLA"/>
+                                            <constraint firstAttribute="trailing" secondItem="PRF-Wy-Q6y" secondAttribute="trailing" constant="8" id="UjB-OH-b5y"/>
+                                            <constraint firstItem="sD2-GA-cvh" firstAttribute="top" secondItem="JgS-uK-ZwY" secondAttribute="top" constant="8" id="WLG-CC-9Ya"/>
+                                            <constraint firstAttribute="bottom" secondItem="xV3-XE-HQ0" secondAttribute="bottom" id="XBv-NV-ggS"/>
+                                            <constraint firstAttribute="bottom" secondItem="PRF-Wy-Q6y" secondAttribute="bottom" constant="8" id="ZCz-28-8XF"/>
+                                            <constraint firstItem="PRF-Wy-Q6y" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="JgS-uK-ZwY" secondAttribute="leading" constant="20" symbolic="YES" id="bPl-RR-jKG"/>
+                                            <constraint firstAttribute="trailing" secondItem="xV3-XE-HQ0" secondAttribute="trailing" id="dcI-FC-MlG"/>
+                                            <constraint firstAttribute="trailing" secondItem="sD2-GA-cvh" secondAttribute="trailing" constant="8" id="jRu-sm-V70"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -115,7 +159,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="847.20000000000005" y="133.00492610837438"/>
+            <point key="canvasLocation" x="847.20000000000005" y="132.68365817091455"/>
         </scene>
         <!--Mars Rover Photos-->
         <scene sceneID="QAJ-rI-LJF">
@@ -178,7 +222,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ye-7S-Ze5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1776.8" y="-155.17241379310346"/>
+            <point key="canvasLocation" x="1777" y="-512"/>
         </scene>
         <!--Edit Photo-->
         <scene sceneID="9El-eq-GIm">
@@ -1079,6 +1123,122 @@
             </objects>
             <point key="canvasLocation" x="1776.8" y="516.79160419790105"/>
         </scene>
+        <!--APOD-->
+        <scene sceneID="u2v-aQ-88B">
+            <objects>
+                <collectionViewController id="wUh-np-9Qe" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="gTK-6I-8q7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="32B-8O-yZz">
+                            <size key="itemSize" width="100" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="KUD-30-gKe">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A34-gq-NYt">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="A34-gq-NYt" secondAttribute="trailing" id="5B2-hs-vkW"/>
+                                    <constraint firstItem="A34-gq-NYt" firstAttribute="leading" secondItem="KUD-30-gKe" secondAttribute="leading" id="Gcu-IB-lHh"/>
+                                    <constraint firstItem="A34-gq-NYt" firstAttribute="top" secondItem="KUD-30-gKe" secondAttribute="top" id="Gtk-b9-iHe"/>
+                                    <constraint firstAttribute="bottom" secondItem="A34-gq-NYt" secondAttribute="bottom" id="psR-EJ-y9q"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="vnw-SI-AIK" kind="show" id="9D9-GJ-Bpp"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="wUh-np-9Qe" id="P3H-aD-0Oj"/>
+                            <outlet property="delegate" destination="wUh-np-9Qe" id="DdM-OB-eKt"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="APOD" id="fyf-tn-rEl"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8nT-LD-liX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="845.60000000000002" y="886.50674662668678"/>
+        </scene>
+        <!--APOD Photo-->
+        <scene sceneID="XOl-OW-zn5">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="vnw-SI-AIK" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="APOD Photo" id="9gV-6u-idJ"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gAv-ea-3mc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="846" y="1621"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="z6S-mx-Ka2">
+            <objects>
+                <viewController storyboardIdentifier="APODPhotoController" id="CqI-Y5-O71" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PeO-rF-tcV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Ty-xI-9de">
+                                <rect key="frame" x="0.0" y="110" width="375" height="413"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fTm-JB-coP">
+                                <rect key="frame" x="16" y="531" width="343" height="120"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="9l3-Rt-uoC"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Orion Nebula in Infrared with WIRE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GM8-AX-1FB">
+                                <rect key="frame" x="16" y="20" width="343" height="53"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tuesday, December 18, 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBh-Y3-dFr">
+                                <rect key="frame" x="16" y="81" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="f1k-uy-0xV" firstAttribute="trailing" secondItem="fTm-JB-coP" secondAttribute="trailing" constant="16" id="5Kf-Lg-nBm"/>
+                            <constraint firstItem="7Ty-xI-9de" firstAttribute="trailing" secondItem="f1k-uy-0xV" secondAttribute="trailing" id="9hz-91-0MY"/>
+                            <constraint firstItem="fTm-JB-coP" firstAttribute="top" secondItem="7Ty-xI-9de" secondAttribute="bottom" constant="8" id="AD8-32-FGB"/>
+                            <constraint firstItem="f1k-uy-0xV" firstAttribute="bottom" secondItem="fTm-JB-coP" secondAttribute="bottom" constant="16" id="HsT-oH-dc0"/>
+                            <constraint firstItem="f1k-uy-0xV" firstAttribute="trailing" secondItem="GM8-AX-1FB" secondAttribute="trailing" constant="16" id="Vj4-Cp-sP0"/>
+                            <constraint firstItem="GM8-AX-1FB" firstAttribute="leading" secondItem="f1k-uy-0xV" secondAttribute="leading" constant="16" id="ZUR-b8-mAe"/>
+                            <constraint firstItem="7Ty-xI-9de" firstAttribute="top" secondItem="bBh-Y3-dFr" secondAttribute="bottom" constant="8" id="dGh-It-6f3"/>
+                            <constraint firstItem="GM8-AX-1FB" firstAttribute="top" secondItem="f1k-uy-0xV" secondAttribute="top" id="ofH-Cf-PUC"/>
+                            <constraint firstItem="bBh-Y3-dFr" firstAttribute="leading" secondItem="GM8-AX-1FB" secondAttribute="leading" id="r0L-tm-yJQ"/>
+                            <constraint firstItem="bBh-Y3-dFr" firstAttribute="top" secondItem="GM8-AX-1FB" secondAttribute="bottom" constant="8" id="uTb-0m-br0"/>
+                            <constraint firstItem="bBh-Y3-dFr" firstAttribute="trailing" secondItem="GM8-AX-1FB" secondAttribute="trailing" id="wPI-2q-jWy"/>
+                            <constraint firstItem="fTm-JB-coP" firstAttribute="leading" secondItem="f1k-uy-0xV" secondAttribute="leading" constant="16" id="x50-VG-Zn7"/>
+                            <constraint firstItem="7Ty-xI-9de" firstAttribute="leading" secondItem="f1k-uy-0xV" secondAttribute="leading" id="xd5-6X-cIC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="f1k-uy-0xV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XiO-n5-pZ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="845.60000000000002" y="2341.0794602698652"/>
+        </scene>
         <!--Search Results Controller-->
         <scene sceneID="6Np-We-m6e">
             <objects>
@@ -1121,7 +1281,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZX9-aa-U2m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1777" y="1207"/>
+            <point key="canvasLocation" x="1777" y="1189"/>
         </scene>
         <!--Earth Image-->
         <scene sceneID="DW9-MU-4Ky">
@@ -1173,6 +1333,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="apod" width="512" height="287"/>
         <image name="filters" width="32" height="28"/>
         <image name="info" width="28" height="28"/>
         <image name="iss" width="512" height="341.5"/>
