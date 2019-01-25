@@ -14,7 +14,7 @@ enum ApiError: Error {
     /// The request failed.
     case requestFailed
     /// The response did not have a success status code.
-    case responseUnsuccessful
+    case responseUnsuccessful(statusCode: Int)
     /// Something is wrong with the response data.
     case invalidData
 }
@@ -75,7 +75,8 @@ class ApiClient {
             
             // Check response status code is success
             guard httpResponse.statusCode == 200 else {
-                completion(.failure(error: ApiError.responseUnsuccessful))
+                let err = ApiError.responseUnsuccessful(statusCode: httpResponse.statusCode)
+                completion(.failure(error: err))
                 return
             }
             

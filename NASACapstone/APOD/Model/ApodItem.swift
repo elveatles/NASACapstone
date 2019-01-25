@@ -20,7 +20,7 @@ struct ApodItem: Codable {
     let title: String
     let explanation: String
     let mediaType: MediaType
-    let hdurl: URL
+    let hdurl: URL?
     let url: URL
 }
 

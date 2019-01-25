@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		096778DA21FAC1390018DEA6 /* Date+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096778D921FAC1390018DEA6 /* Date+Helpers.swift */; };
+		096778DC21FB8ACF0018DEA6 /* DateHelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096778DB21FB8ACF0018DEA6 /* DateHelpersTests.swift */; };
 		097EBE0521F66A1E0032C8BE /* MarsRoverPhotosEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EBE0421F66A1E0032C8BE /* MarsRoverPhotosEditController.swift */; };
 		097EBE0721F69B350032C8BE /* ColorPickerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EBE0621F69B350032C8BE /* ColorPickerDataSource.swift */; };
 		097EBE0921F6B07F0032C8BE /* UITextView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EBE0821F6B07F0032C8BE /* UITextView+Helpers.swift */; };
@@ -40,6 +42,9 @@
 		09D7761521FAA0E90057187F /* ApodEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7761421FAA0E90057187F /* ApodEndpointTests.swift */; };
 		09D7761721FAA5CF0057187F /* apod_array_stub.json in Resources */ = {isa = PBXBuildFile; fileRef = 09D7761621FAA5CF0057187F /* apod_array_stub.json */; };
 		09D7761921FAA6550057187F /* ApodClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7761821FAA6550057187F /* ApodClientTests.swift */; };
+		09D7761C21FAAE6F0057187F /* ApodCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7761B21FAAE6F0057187F /* ApodCollectionController.swift */; };
+		09D7761F21FAAE920057187F /* ApodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7761E21FAAE920057187F /* ApodCell.swift */; };
+		09D7762121FAB8340057187F /* ApodHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7762021FAB8340057187F /* ApodHeaderView.swift */; };
 		09DEF69021EFDF4900A25956 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DEF68F21EFDF4900A25956 /* AppDelegate.swift */; };
 		09DEF69221EFDF4900A25956 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DEF69121EFDF4900A25956 /* ViewController.swift */; };
 		09DEF69521EFDF4900A25956 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09DEF69321EFDF4900A25956 /* Main.storyboard */; };
@@ -57,6 +62,7 @@
 		09DEF6CE21F1154700A25956 /* ApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DEF6CD21F1154700A25956 /* ApiKey.swift */; };
 		09DEF6D221F11A5C00A25956 /* MarsRoverPhotosEndpointsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DEF6D121F11A5C00A25956 /* MarsRoverPhotosEndpointsTests.swift */; };
 		09DEF6D421F1457E00A25956 /* MarsRoverPhotosClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DEF6D321F1457E00A25956 /* MarsRoverPhotosClientTests.swift */; };
+		09EAD57121FBB60F00D2BB96 /* ApodDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EAD57021FBB60F00D2BB96 /* ApodDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +76,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		096778D921FAC1390018DEA6 /* Date+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Helpers.swift"; sourceTree = "<group>"; };
+		096778DB21FB8ACF0018DEA6 /* DateHelpersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelpersTests.swift; sourceTree = "<group>"; };
 		097EBE0421F66A1E0032C8BE /* MarsRoverPhotosEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosEditController.swift; sourceTree = "<group>"; };
 		097EBE0621F69B350032C8BE /* ColorPickerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerDataSource.swift; sourceTree = "<group>"; };
 		097EBE0821F6B07F0032C8BE /* UITextView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Helpers.swift"; sourceTree = "<group>"; };
@@ -103,6 +111,9 @@
 		09D7761421FAA0E90057187F /* ApodEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodEndpointTests.swift; sourceTree = "<group>"; };
 		09D7761621FAA5CF0057187F /* apod_array_stub.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = apod_array_stub.json; sourceTree = "<group>"; };
 		09D7761821FAA6550057187F /* ApodClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodClientTests.swift; sourceTree = "<group>"; };
+		09D7761B21FAAE6F0057187F /* ApodCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodCollectionController.swift; sourceTree = "<group>"; };
+		09D7761E21FAAE920057187F /* ApodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodCell.swift; sourceTree = "<group>"; };
+		09D7762021FAB8340057187F /* ApodHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodHeaderView.swift; sourceTree = "<group>"; };
 		09DEF68C21EFDF4900A25956 /* NASACapstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NASACapstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09DEF68F21EFDF4900A25956 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09DEF69121EFDF4900A25956 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +135,7 @@
 		09DEF6CD21F1154700A25956 /* ApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKey.swift; sourceTree = "<group>"; };
 		09DEF6D121F11A5C00A25956 /* MarsRoverPhotosEndpointsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosEndpointsTests.swift; sourceTree = "<group>"; };
 		09DEF6D321F1457E00A25956 /* MarsRoverPhotosClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosClientTests.swift; sourceTree = "<group>"; };
+		09EAD57021FBB60F00D2BB96 /* ApodDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +232,7 @@
 				097EBE1021F6B82D0032C8BE /* Comparable+Helpers.swift */,
 				09D4AE1421F9149D00000261 /* MKMapView+Helpers.swift */,
 				09D4AE1621F9195700000261 /* CLPlacemark+Helpers.swift */,
+				096778D921FAC1390018DEA6 /* Date+Helpers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -254,6 +267,9 @@
 		09D4AE1C21FA907600000261 /* APOD */ = {
 			isa = PBXGroup;
 			children = (
+				09EAD56F21FBB5EF00D2BB96 /* DataSource */,
+				09D7761D21FAAE740057187F /* Views */,
+				09D7761A21FAAE220057187F /* Controllers */,
 				09D7761121FA9E980057187F /* Model */,
 				09D4AE1D21FA907F00000261 /* Networking */,
 			);
@@ -275,6 +291,23 @@
 				09D7761221FA9EB70057187F /* ApodItem.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		09D7761A21FAAE220057187F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				09D7761B21FAAE6F0057187F /* ApodCollectionController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		09D7761D21FAAE740057187F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				09D7761E21FAAE920057187F /* ApodCell.swift */,
+				09D7762021FAB8340057187F /* ApodHeaderView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		09DEF68321EFDF4900A25956 = {
@@ -300,11 +333,11 @@
 		09DEF68E21EFDF4900A25956 /* NASACapstone */ = {
 			isa = PBXGroup;
 			children = (
-				09D4AE1C21FA907600000261 /* APOD */,
 				09A2579821F19E8C00C8722D /* Extensions */,
 				09DEF6AF21F0074400A25956 /* Networking */,
 				09A2578821F166B800C8722D /* MarsRoverPhotos */,
 				097EBE1421F7A9E60032C8BE /* EarthImagery */,
+				09D4AE1C21FA907600000261 /* APOD */,
 				09DEF68F21EFDF4900A25956 /* AppDelegate.swift */,
 				09DEF69121EFDF4900A25956 /* ViewController.swift */,
 				09DEF69321EFDF4900A25956 /* Main.storyboard */,
@@ -318,6 +351,7 @@
 		09DEF6A321EFDF4C00A25956 /* NASACapstoneTests */ = {
 			isa = PBXGroup;
 			children = (
+				096778DB21FB8ACF0018DEA6 /* DateHelpersTests.swift */,
 				097EBE1221F6B92E0032C8BE /* ComparableHelpersTests.swift */,
 				09A2579F21F1AC6400C8722D /* MarsRoverPhotoTests.swift */,
 				09DEF6D321F1457E00A25956 /* MarsRoverPhotosClientTests.swift */,
@@ -355,6 +389,14 @@
 				09DEF6BD21F02B7800A25956 /* MarsRoverPhoto.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		09EAD56F21FBB5EF00D2BB96 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				09EAD57021FBB60F00D2BB96 /* ApodDataSource.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -486,10 +528,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				09D7761321FA9EB70057187F /* ApodItem.swift in Sources */,
+				096778DA21FAC1390018DEA6 /* Date+Helpers.swift in Sources */,
 				097EBE1E21F7B8E50032C8BE /* EarthImageryClient.swift in Sources */,
 				09D4AE1921F9340700000261 /* EarthImageryController.swift in Sources */,
 				09D7761021FA9E4B0057187F /* ApodClient.swift in Sources */,
 				09A2578C21F1679D00C8722D /* MarsRoverPhotosFiltersController.swift in Sources */,
+				09D7762121FAB8340057187F /* ApodHeaderView.swift in Sources */,
 				09DEF6CC21F10F5500A25956 /* Endpoint.swift in Sources */,
 				09A2579721F1977400C8722D /* MarsRoverPhotoCell.swift in Sources */,
 				09D4AE1321F908C800000261 /* SearchResultsController.swift in Sources */,
@@ -498,7 +542,9 @@
 				09D4AE1121F9049700000261 /* EarthImagerySearchController.swift in Sources */,
 				09DEF6C421F0FF5000A25956 /* MarsRoverPhotosClient.swift in Sources */,
 				097EBE1121F6B82D0032C8BE /* Comparable+Helpers.swift in Sources */,
+				09D7761F21FAAE920057187F /* ApodCell.swift in Sources */,
 				097EBE1721F7AA590032C8BE /* EarthImage.swift in Sources */,
+				09EAD57121FBB60F00D2BB96 /* ApodDataSource.swift in Sources */,
 				09DEF6CE21F1154700A25956 /* ApiKey.swift in Sources */,
 				097EBE0521F66A1E0032C8BE /* MarsRoverPhotosEditController.swift in Sources */,
 				097EBE0721F69B350032C8BE /* ColorPickerDataSource.swift in Sources */,
@@ -514,6 +560,7 @@
 				09DEF6C821F105F100A25956 /* MarsRoverPhotosEndpoints.swift in Sources */,
 				09D4AE1721F9195700000261 /* CLPlacemark+Helpers.swift in Sources */,
 				097EBE1A21F7AB2D0032C8BE /* EarthImageryEndpoint.swift in Sources */,
+				09D7761C21FAAE6F0057187F /* ApodCollectionController.swift in Sources */,
 				09A2579A21F19EBC00C8722D /* UIViewController+Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,6 +578,7 @@
 				09DEF6A521EFDF4C00A25956 /* NASACapstoneTests.swift in Sources */,
 				09D7761521FAA0E90057187F /* ApodEndpointTests.swift in Sources */,
 				097EBE2921F837490032C8BE /* MockUserDefaults.swift in Sources */,
+				096778DC21FB8ACF0018DEA6 /* DateHelpersTests.swift in Sources */,
 				09DEF6D421F1457E00A25956 /* MarsRoverPhotosClientTests.swift in Sources */,
 				097EBE1321F6B92E0032C8BE /* ComparableHelpersTests.swift in Sources */,
 				09DEF6D221F11A5C00A25956 /* MarsRoverPhotosEndpointsTests.swift in Sources */,
