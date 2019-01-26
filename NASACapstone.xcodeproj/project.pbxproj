@@ -63,6 +63,13 @@
 		09DEF6D221F11A5C00A25956 /* MarsRoverPhotosEndpointsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DEF6D121F11A5C00A25956 /* MarsRoverPhotosEndpointsTests.swift */; };
 		09DEF6D421F1457E00A25956 /* MarsRoverPhotosClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DEF6D321F1457E00A25956 /* MarsRoverPhotosClientTests.swift */; };
 		09EAD57121FBB60F00D2BB96 /* ApodDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EAD57021FBB60F00D2BB96 /* ApodDataSource.swift */; };
+		09EAD57321FBCDB400D2BB96 /* ApodPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EAD57221FBCDB400D2BB96 /* ApodPageController.swift */; };
+		09EAD57521FBCE0000D2BB96 /* ApodItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EAD57421FBCE0000D2BB96 /* ApodItemController.swift */; };
+		09EAD57A21FBE12B00D2BB96 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09EAD57621FBE12B00D2BB96 /* FBSDKShareKit.framework */; };
+		09EAD57B21FBE12B00D2BB96 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09EAD57721FBE12B00D2BB96 /* FBSDKCoreKit.framework */; };
+		09EAD57C21FBE12B00D2BB96 /* FacebookShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09EAD57821FBE12B00D2BB96 /* FacebookShare.framework */; };
+		09EAD57D21FBE12B00D2BB96 /* FacebookCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09EAD57921FBE12B00D2BB96 /* FacebookCore.framework */; };
+		09EAD57F21FBEB1C00D2BB96 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09EAD57E21FBEB1C00D2BB96 /* Bolts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +143,13 @@
 		09DEF6D121F11A5C00A25956 /* MarsRoverPhotosEndpointsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosEndpointsTests.swift; sourceTree = "<group>"; };
 		09DEF6D321F1457E00A25956 /* MarsRoverPhotosClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosClientTests.swift; sourceTree = "<group>"; };
 		09EAD57021FBB60F00D2BB96 /* ApodDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodDataSource.swift; sourceTree = "<group>"; };
+		09EAD57221FBCDB400D2BB96 /* ApodPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodPageController.swift; sourceTree = "<group>"; };
+		09EAD57421FBCE0000D2BB96 /* ApodItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodItemController.swift; sourceTree = "<group>"; };
+		09EAD57621FBE12B00D2BB96 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Carthage/Build/iOS/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		09EAD57721FBE12B00D2BB96 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Carthage/Build/iOS/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		09EAD57821FBE12B00D2BB96 /* FacebookShare.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookShare.framework; path = Carthage/Build/iOS/FacebookShare.framework; sourceTree = "<group>"; };
+		09EAD57921FBE12B00D2BB96 /* FacebookCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookCore.framework; path = Carthage/Build/iOS/FacebookCore.framework; sourceTree = "<group>"; };
+		09EAD57E21FBEB1C00D2BB96 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Carthage/Build/iOS/Bolts.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +158,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				09A2579D21F1A46100C8722D /* Kingfisher.framework in Frameworks */,
+				09EAD57F21FBEB1C00D2BB96 /* Bolts.framework in Frameworks */,
+				09EAD57A21FBE12B00D2BB96 /* FBSDKShareKit.framework in Frameworks */,
+				09EAD57B21FBE12B00D2BB96 /* FBSDKCoreKit.framework in Frameworks */,
+				09EAD57C21FBE12B00D2BB96 /* FacebookShare.framework in Frameworks */,
+				09EAD57D21FBE12B00D2BB96 /* FacebookCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +259,11 @@
 		09A2579B21F1A46100C8722D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				09EAD57E21FBEB1C00D2BB96 /* Bolts.framework */,
+				09EAD57921FBE12B00D2BB96 /* FacebookCore.framework */,
+				09EAD57821FBE12B00D2BB96 /* FacebookShare.framework */,
+				09EAD57721FBE12B00D2BB96 /* FBSDKCoreKit.framework */,
+				09EAD57621FBE12B00D2BB96 /* FBSDKShareKit.framework */,
 				09A2579C21F1A46100C8722D /* Kingfisher.framework */,
 			);
 			name = Frameworks;
@@ -297,6 +321,8 @@
 			isa = PBXGroup;
 			children = (
 				09D7761B21FAAE6F0057187F /* ApodCollectionController.swift */,
+				09EAD57221FBCDB400D2BB96 /* ApodPageController.swift */,
+				09EAD57421FBCE0000D2BB96 /* ApodItemController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -510,6 +536,11 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FacebookCore.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FBSDKCoreKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Bolts.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FacebookShare.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FBSDKShareKit.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -535,6 +566,7 @@
 				09A2578C21F1679D00C8722D /* MarsRoverPhotosFiltersController.swift in Sources */,
 				09D7762121FAB8340057187F /* ApodHeaderView.swift in Sources */,
 				09DEF6CC21F10F5500A25956 /* Endpoint.swift in Sources */,
+				09EAD57321FBCDB400D2BB96 /* ApodPageController.swift in Sources */,
 				09A2579721F1977400C8722D /* MarsRoverPhotoCell.swift in Sources */,
 				09D4AE1321F908C800000261 /* SearchResultsController.swift in Sources */,
 				09D4AE1F21FA909700000261 /* ApodEndpoint.swift in Sources */,
@@ -562,6 +594,7 @@
 				097EBE1A21F7AB2D0032C8BE /* EarthImageryEndpoint.swift in Sources */,
 				09D7761C21FAAE6F0057187F /* ApodCollectionController.swift in Sources */,
 				09A2579A21F19EBC00C8722D /* UIViewController+Helpers.swift in Sources */,
+				09EAD57521FBCE0000D2BB96 /* ApodItemController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

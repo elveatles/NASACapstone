@@ -54,10 +54,20 @@ class ApodDataSource: NSObject, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! ApodCell
-        let item = sections[indexPath.section][indexPath.row]
+        let item = object(at: indexPath)
         cell.configure(apodItem: item)
         
         return cell
+    }
+    
+    /**
+     Get the APOD item at the given index path.
+     
+     - Parameter indexPath: The index path of the item.
+     - Returns: The item at the index path.
+    */
+    func object(at indexPath: IndexPath) -> ApodItem {
+        return sections[indexPath.section][indexPath.row]
     }
     
     /// Fetch the next page of data. Each page is a month.
@@ -79,7 +89,7 @@ class ApodDataSource: NSObject, UICollectionViewDataSource {
                 case .success(let result):
                     // Filter out anything that's not an image (videos).
                     let imagesOnly = result.filter { $0.mediaType == .image }
-                    self.sections.append(imagesOnly)
+                    self.sections.append(imagesOnly.reversed())
                     
                     // Get the previous month.
                     self.dateToFetch = Calendar.current.date(byAdding: .month, value: -1, to: self.dateToFetch)!

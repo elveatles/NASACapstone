@@ -1,1 +1,3 @@
+github "facebook/facebook-objc-sdk" "e744f57a0a75ef4674b607daf13a5d3cf1928a01"
+github "facebook/facebook-sdk-swift" "0.5.0"
 github "onevcat/Kingfisher" "5.1.0"

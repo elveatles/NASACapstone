@@ -36,16 +36,20 @@ class ApodCollectionController: UICollectionViewController {
         setupCellSize()
         fetchNextPage()
     }
-
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "showApodPages" {
+            let controller = segue.destination as! ApodPageController
+            // Flatten data.
+            controller.apodItems = Array(dataSource.sections.joined())
+            if let indexPath = collectionView.indexPathsForSelectedItems?.first {
+                controller.startingItem = dataSource.object(at: indexPath)
+            }
+        }
     }
-    */
 
     // MARK: UICollectionViewDelegate
     
