@@ -35,7 +35,6 @@
 		09D4AE1521F9149D00000261 /* MKMapView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D4AE1421F9149D00000261 /* MKMapView+Helpers.swift */; };
 		09D4AE1721F9195700000261 /* CLPlacemark+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D4AE1621F9195700000261 /* CLPlacemark+Helpers.swift */; };
 		09D4AE1921F9340700000261 /* EarthImageryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D4AE1821F9340700000261 /* EarthImageryController.swift */; };
-		09D4AE1B21FA906000000261 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09D4AE1A21FA905F00000261 /* Default-568h@2x.png */; };
 		09D4AE1F21FA909700000261 /* ApodEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D4AE1E21FA909700000261 /* ApodEndpoint.swift */; };
 		09D7761021FA9E4B0057187F /* ApodClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7760F21FA9E4B0057187F /* ApodClient.swift */; };
 		09D7761321FA9EB70057187F /* ApodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7761221FA9EB70057187F /* ApodItem.swift */; };
@@ -111,7 +110,6 @@
 		09D4AE1421F9149D00000261 /* MKMapView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Helpers.swift"; sourceTree = "<group>"; };
 		09D4AE1621F9195700000261 /* CLPlacemark+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLPlacemark+Helpers.swift"; sourceTree = "<group>"; };
 		09D4AE1821F9340700000261 /* EarthImageryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthImageryController.swift; sourceTree = "<group>"; };
-		09D4AE1A21FA905F00000261 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		09D4AE1E21FA909700000261 /* ApodEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodEndpoint.swift; sourceTree = "<group>"; };
 		09D7760F21FA9E4B0057187F /* ApodClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodClient.swift; sourceTree = "<group>"; };
 		09D7761221FA9EB70057187F /* ApodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodItem.swift; sourceTree = "<group>"; };
@@ -339,7 +337,6 @@
 		09DEF68321EFDF4900A25956 = {
 			isa = PBXGroup;
 			children = (
-				09D4AE1A21FA905F00000261 /* Default-568h@2x.png */,
 				09DEF68E21EFDF4900A25956 /* NASACapstone */,
 				09DEF6A321EFDF4C00A25956 /* NASACapstoneTests */,
 				09DEF68D21EFDF4900A25956 /* Products */,
@@ -508,7 +505,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				09DEF69A21EFDF4B00A25956 /* LaunchScreen.storyboard in Resources */,
-				09D4AE1B21FA906000000261 /* Default-568h@2x.png in Resources */,
 				09DEF69721EFDF4B00A25956 /* Assets.xcassets in Resources */,
 				09DEF69521EFDF4900A25956 /* Main.storyboard in Resources */,
 			);

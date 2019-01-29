@@ -8,6 +8,7 @@
 
 import UIKit
 import Kingfisher
+import FacebookShare
 
 /// Shows an APOD photo with information about it.
 class ApodItemController: UIViewController {
@@ -15,6 +16,7 @@ class ApodItemController: UIViewController {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var explanationTextView: UITextView!
+    @IBOutlet weak var shareStackView: UIStackView!
     
     /// Date formatter for this view controller.
     static let dateFormatter: DateFormatter = {
@@ -29,7 +31,12 @@ class ApodItemController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let shareButton = ShareButton<LinkShareContent>()
+        let content = LinkShareContent(url: apodItem.url)
+        shareButton.content = content
+        shareStackView.addArrangedSubview(shareButton)
+        
         imageView.kf.indicatorType = .activity
         configureView()
     }
