@@ -242,12 +242,14 @@
                                         <rect key="frame" x="8" y="8" width="359" height="537"/>
                                         <gestureRecognizers/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences" spellCheckingType="no"/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="16E-LZ-MnS" appends="YES" id="GFq-XD-1cO"/>
                                             <outletCollection property="gestureRecognizers" destination="Tl7-y2-lz4" appends="YES" id="ZPy-Ev-Ncs"/>
                                             <outletCollection property="gestureRecognizers" destination="nXO-ja-xie" appends="YES" id="J6Z-Ct-DSv"/>
+                                            <outletCollection property="gestureRecognizers" destination="jbc-4m-EdS" appends="YES" id="tS3-DS-bYC"/>
+                                            <outletCollection property="gestureRecognizers" destination="Liz-zd-y19" appends="YES" id="Q6q-Zu-39C"/>
                                         </connections>
                                     </textView>
                                 </subviews>
@@ -344,6 +346,16 @@
                         <action selector="textPinched:" destination="Ffy-6a-L4D" id="Q2C-jl-qpC"/>
                     </connections>
                 </pinchGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="jbc-4m-EdS">
+                    <connections>
+                        <action selector="textSwipedUp:" destination="Ffy-6a-L4D" id="rK5-u9-jeF"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="Liz-zd-y19">
+                    <connections>
+                        <action selector="textSwipedDown:" destination="Ffy-6a-L4D" id="iMB-ax-BbN"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2624.8000000000002" y="-155.17241379310346"/>
         </scene>

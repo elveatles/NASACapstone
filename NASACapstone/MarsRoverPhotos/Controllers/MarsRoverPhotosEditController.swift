@@ -18,7 +18,6 @@ class MarsRoverPhotosEditController: UIViewController {
     @IBOutlet weak var postcardView: UIView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textView: UITextView!
-    @IBOutlet weak var fontSizeSlider: UISlider!
     @IBOutlet weak var colorPickerCollection: UICollectionView!
     
     /// Photo to edit.
@@ -32,10 +31,19 @@ class MarsRoverPhotosEditController: UIViewController {
     /// textView's default font size.
     var defaultFontSize: CGFloat = 26
     var startFontSize: CGFloat = 26
-
+    /// Vertical alignment for `textView`.
+    var verticalAlignment: UIControl.ContentVerticalAlignment = .center {
+        didSet {
+            textView.updateVerticalAlignment(verticalAlignment)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        textView.delegate = self
+        textView.spellCheckingType = .no
+        textView.text = ""
         defaultFontSize = textView.font?.pointSize ?? 26
         startFontSize = defaultFontSize
         textView.addDoneButtonToKeyboard()
@@ -45,6 +53,13 @@ class MarsRoverPhotosEditController: UIViewController {
         
         /// Kingfisher caches images so it won't have to download it again.
         imageView.kf.setImage(with: photo.imgSrcHttps)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        textView.text = "Your message!"
+        textView.updateVerticalAlignment(verticalAlignment)
     }
     
     /// User is done editing the postcard.
@@ -79,6 +94,24 @@ class MarsRoverPhotosEditController: UIViewController {
             textView.textAlignment = .center
         default:
             textView.textAlignment = .right
+        }
+    }
+    
+    @IBAction func textSwipedUp(_ sender: UISwipeGestureRecognizer) {
+        switch verticalAlignment {
+        case .bottom:
+            verticalAlignment = .center
+        default:
+            verticalAlignment = .top
+        }
+    }
+    
+    @IBAction func textSwipedDown(_ sender: UISwipeGestureRecognizer) {
+        switch verticalAlignment {
+        case .top:
+            verticalAlignment = .center
+        default:
+            verticalAlignment = .bottom
         }
     }
     
@@ -140,7 +173,12 @@ class MarsRoverPhotosEditController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+}
 
+extension MarsRoverPhotosEditController: UITextViewDelegate {
+    func textViewDidChange(_ textView: UITextView) {
+        textView.updateVerticalAlignment(verticalAlignment)
+    }
 }
 
 extension MarsRoverPhotosEditController: UICollectionViewDelegate {
