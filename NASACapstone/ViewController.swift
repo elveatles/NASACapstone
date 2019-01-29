@@ -9,12 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var marsRoverView: UIView!
+    @IBOutlet weak var marsRoverTopConstraint: NSLayoutConstraint!
+    
+    private let marsRoverImage = #imageLiteral(resourceName: "rover")
+    private var marsRoverImageLayer = CALayer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // Nudge the Mars rover photo up a bit.
+        marsRoverTopConstraint.constant = -marsRoverView.frame.height * 0.1
     }
-
-
 }
 
