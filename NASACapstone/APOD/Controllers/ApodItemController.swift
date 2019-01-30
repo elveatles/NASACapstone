@@ -41,6 +41,14 @@ class ApodItemController: UIViewController {
         configureView()
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        // For some reason UITextView content does not start at the top.
+        // This forces it to scroll to the top.
+        explanationTextView.setContentOffset(.zero, animated: false)
+    }
+    
 
     /*
     // MARK: - Navigation
@@ -52,6 +60,7 @@ class ApodItemController: UIViewController {
     }
     */
     
+    /// Configure the view with the currently assigned `apodItem`.
     func configureView() {
         titleLabel.text = apodItem.title
         dateLabel.text = ApodItemController.dateFormatter.string(from: apodItem.date)
