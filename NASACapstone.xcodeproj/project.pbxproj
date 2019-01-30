@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09136CB422022C2800A343CD /* AppVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09136CB322022C2800A343CD /* AppVariables.swift */; };
 		096778DA21FAC1390018DEA6 /* Date+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096778D921FAC1390018DEA6 /* Date+Helpers.swift */; };
 		096778DC21FB8ACF0018DEA6 /* DateHelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096778DB21FB8ACF0018DEA6 /* DateHelpersTests.swift */; };
 		097EBE0521F66A1E0032C8BE /* MarsRoverPhotosEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097EBE0421F66A1E0032C8BE /* MarsRoverPhotosEditController.swift */; };
@@ -82,6 +83,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09136CB322022C2800A343CD /* AppVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVariables.swift; sourceTree = "<group>"; };
 		096778D921FAC1390018DEA6 /* Date+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Helpers.swift"; sourceTree = "<group>"; };
 		096778DB21FB8ACF0018DEA6 /* DateHelpersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelpersTests.swift; sourceTree = "<group>"; };
 		097EBE0421F66A1E0032C8BE /* MarsRoverPhotosEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhotosEditController.swift; sourceTree = "<group>"; };
@@ -361,6 +363,7 @@
 				09A2578821F166B800C8722D /* MarsRoverPhotos */,
 				097EBE1421F7A9E60032C8BE /* EarthImagery */,
 				09D4AE1C21FA907600000261 /* APOD */,
+				09136CB322022C2800A343CD /* AppVariables.swift */,
 				09DEF68F21EFDF4900A25956 /* AppDelegate.swift */,
 				09DEF69121EFDF4900A25956 /* ViewController.swift */,
 				09DEF69321EFDF4900A25956 /* Main.storyboard */,
@@ -565,6 +568,7 @@
 				09EAD57321FBCDB400D2BB96 /* ApodPageController.swift in Sources */,
 				09A2579721F1977400C8722D /* MarsRoverPhotoCell.swift in Sources */,
 				09D4AE1321F908C800000261 /* SearchResultsController.swift in Sources */,
+				09136CB422022C2800A343CD /* AppVariables.swift in Sources */,
 				09D4AE1F21FA909700000261 /* ApodEndpoint.swift in Sources */,
 				09A257A321F2537D00C8722D /* MarsRoverPhotosDataSource.swift in Sources */,
 				09D4AE1121F9049700000261 /* EarthImagerySearchController.swift in Sources */,

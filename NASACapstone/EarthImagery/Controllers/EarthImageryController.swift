@@ -13,6 +13,8 @@ import Kingfisher
 class EarthImageryController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
+    /// The client for the Earth imagery REST API.
+    let earthImageryClient = EarthImageryClient(apiKey: ApiKey.nasa, session: AppVariables.shared.urlSession)
     var endpoint: EarthImageryEndpoint!
     
     override func viewDidLoad() {
@@ -21,7 +23,7 @@ class EarthImageryController: UIViewController {
         imageView.kf.indicatorType = .activity
         
         // Fetch the image data, then download the image.
-        AppDelegate.earthImageryClient.fetch(with: endpoint.request) { (response: ApiResponse<EarthImage>) in
+        earthImageryClient.fetch(with: endpoint.request) { (response: ApiResponse<EarthImage>) in
             DispatchQueue.main.async {
                 switch response {
                 case .success(let result):

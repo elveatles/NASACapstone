@@ -17,6 +17,8 @@ class ApodDataSource: NSObject, UICollectionViewDataSource {
         return result
     }()
     
+    /// The client for the NASA APOD (Astronomy Picture of the Day) REST API.
+    let apodClient = ApodClient(apiKey: ApiKey.nasa, session: AppVariables.shared.urlSession)
     /// The data source.
     /// Each outer array is a section.
     /// Each inner array is an item in the section.
@@ -81,7 +83,7 @@ class ApodDataSource: NSObject, UICollectionViewDataSource {
         let endDate = sections.isEmpty ? Date() : dateToFetch.lastDayOfTheMonth
         
         // Fetch all pictures for the month.
-        AppDelegate.apodClient.apod(startDate: dateToFetch.firstDayOfTheMonth, endDate: endDate) { (response) in
+        apodClient.apod(startDate: dateToFetch.firstDayOfTheMonth, endDate: endDate) { (response) in
             DispatchQueue.main.async {
                 self.isFetchingSection = false
                 

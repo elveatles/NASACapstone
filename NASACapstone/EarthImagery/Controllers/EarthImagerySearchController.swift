@@ -13,6 +13,9 @@ import MapKit
 class EarthImagerySearchController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     
+    /// Location manager used to find the user's current location.
+    let locationManager = CLLocationManager()
+    
     /// Search controller used to search for locations by name.
     lazy var searchController: UISearchController = {
         // Create search results table from storyboard.
@@ -34,9 +37,9 @@ class EarthImagerySearchController: UIViewController {
         navigationItem.searchController = searchController
         definesPresentationContext = true
 
-        AppDelegate.locationManager.delegate = self
-        AppDelegate.locationManager.requestWhenInUseAuthorization()
-        AppDelegate.locationManager.requestLocation()
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestLocation()
     }
     
 

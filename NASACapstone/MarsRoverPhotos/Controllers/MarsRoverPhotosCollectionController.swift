@@ -12,6 +12,9 @@ import UIKit
 class MarsRoverPhotosCollectionController: UICollectionViewController {
     @IBOutlet weak var activityView: UIActivityIndicatorView!
     
+    /// The client for the Mars rover photo REST API.
+    let marsRoverPhotosClient = MarsRoverPhotosClient(apiKey: ApiKey.nasa, session: AppVariables.shared.urlSession)
+    
     /// Data source for the collection view
     private let dataSource = MarsRoverPhotosDataSource()
     /// The number of columns for the layout.
@@ -43,7 +46,7 @@ class MarsRoverPhotosCollectionController: UICollectionViewController {
     func fetchPhotos() {
         activityView.startAnimating()
         
-        AppDelegate.marsRoverPhotosClient.fetch(with: photosEndpoint.request) { (response: ApiResponse<MarsRoverPhotoPage>) in
+        marsRoverPhotosClient.fetch(with: photosEndpoint.request) { (response: ApiResponse<MarsRoverPhotoPage>) in
             DispatchQueue.main.async {
                 self.activityView.stopAnimating()
                 
