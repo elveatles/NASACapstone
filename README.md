@@ -34,7 +34,7 @@ brew upgrade carthage
 
 If Carthage doesn't build the `Bolts` framework like it did for me, there's a [workaround](https://github.com/facebook/facebook-swift-sdk/issues/294). `cd` to `Carthage/Checkouts/facebook-sdk-swift` then run `carthage build --no-skip-current --platform ios`.
 
-### Exceeds Expectations
+## Exceeds Expectations
 
 This project has implemented the "Exceeds Expectations" criteria which is
 
@@ -43,3 +43,7 @@ This project has implemented the "Exceeds Expectations" criteria which is
 For this, the NASA APOD [Astronomy Picture of the Day](https://apod.nasa.gov/apod/astropix.html) [API](https://api.nasa.gov/api.html#apod) was used. The user can choose from a collection of thumbnails to see a larger image and details about the image. A Facebook share button can be used in the detail view of the photo.
 
 The Facebook share button is associated with a Facebook Test App and can be tested with a Facebook Test User.
+
+## Requirements
+
+The Mars rover email feature for this app requires you to run the app on an actual device. If you just want to see the photo in the simulator, it is also saved to the Photos library.
