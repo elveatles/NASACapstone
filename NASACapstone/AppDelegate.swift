@@ -10,6 +10,12 @@ import UIKit
 import CoreLocation
 import FacebookCore
 
+/**
+ I tested this app with instruments on a physical device by clicking on "Show Debug Navigator" in the top left of Xcode. I clicked on "CPU", then "Profile in Instruments", then "Transfer" when prompted. I used the app and paused the instrument when I saw spikes in CPU usage. It helped to click on "Call Tree" at the bottom and check the boxes for "Hide System Libraries" and "Invert Call Tree".
+ I did the same for RAM, pausing when memory increased dramatically, or when the Leaks timeline showed a problem. I would click "Mark Generation" before tapping on something to see how much memory was allocated for a specific action in the app. It helped to type the app name "NASACapstone" into the app to filter out memory unrelated to my code.
+ Mainly, there was not much I could do to improve performance or memory usage because the app needed all of the resources it was using. I believe the memory continues to rise mainly because of Kingfisher caching images. Kingfisher is supposed to make sure caches don't go past their size limit. So mainly what I would do is change the cache size limit if I needed to.
+*/
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     static let locationManager = CLLocationManager()
@@ -26,6 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
         SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         return true
     }
